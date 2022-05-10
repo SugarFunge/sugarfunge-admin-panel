@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "get_data",
+    "pageId": "market",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetMarkets: (data) => {\n\t\tvar editedMarkets = data;\n\t\tvar MarketArray = [];\n\t\tfor (let i = 0; i < editedMarkets.length; i++) {\n\t\t\tvar newMarket = {\n\t\t\t\t\"label\": editedMarkets[i].chain_id,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"market_id\": editedMarkets[i].id,\n\t\t\t\t\"market_rate_id\": editedMarkets[i].market_rates[0].id,\t\t\t\t\n\t\t\t\t\"chain_id\": editedMarkets[i].chain_id,\n\t\t\t\t\"market_rate_chain_id\": editedMarkets[i].market_rates[0].chain_id,\n\t\t\t};\n\t\t\tMarketArray.push(newMarket);\n\t\t}\n\t\treturn MarketArray\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "market_get_data",
+  "deleted": false,
+  "gitSyncId": "624b6e0e4038d3408c0e5b6e_624c7f8915ad2956a375f5cc"
+}

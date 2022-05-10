@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "accounts",
+    "pageId": "account",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trefresh_accounts: () => {\n\t\tget_accounts.run(() => {\n\t\t\taccounts.account_dropdowns();\n\t\t\taccounts.accounts_all();\n\t\t}, () => showAlert('Couldnt refresh accounts','warning'))\n\t},\n\taccount_create_response: () => {\n\t\taccount_create_sf.run(() => {\n\t\t\taccount_create.run(() => \n\t\t\t\t\t\t\t\t\t\t\t {accounts.refresh_accounts(); showAlert('Account Created', 'success')}, () => showAlert('Couldnt create the Account in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Account in chain'))\t\t\n\t},\n\taccount_fund_response: () => {\n\t\taccount_fund_sf.run(() => showAlert('Account funded', 'success'), () => showAlert('Couldnt fund the Account', 'error'))\n\t},\n\taccount_balance_response: () => {\n\t\taccount_balance_sf.run(() => accounts.account_balance(), () => showAlert('Couldnt find the account balance', 'error'))\n\t},\n\taccount_balance: () => {\n\t\tstoreValue(\"account_balance\", undefined);\n\t\tstoreValue(\"account_balance\", account_balance_sf.data.balance.toString());\n\t\treturn appsmith.store.account_balance\n\t},\n\taccounts_all: () => {\n\t\tstoreValue(\"accounts_table\", undefined);\n\t\tstoreValue(\"accounts_table\", get_data.getAccountsTable(get_accounts.data.sf_account));\n\t\treturn appsmith.store.accounts_table\n\t},\n\taccount_dropdowns: () => {\n\t\tstoreValue(\"accounts\", undefined);\n\t\tstoreValue(\"accounts\", get_data.getAccounts(get_accounts.data.sf_account));\n\t\treturn appsmith.store.accounts;\n\t}\n}",
+    "variables": []
+  },
+  "id": "account_accounts",
+  "deleted": false,
+  "gitSyncId": "62572a650ab3884f9e41db68_625f2efb02ab467c5382e2cf"
+}

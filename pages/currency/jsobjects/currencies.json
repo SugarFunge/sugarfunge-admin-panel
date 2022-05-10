@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "currencies",
+    "pageId": "currency",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trefresh_currencies: () => {\n\t\tget_currency.run(() => {\n\t\t\tcurrencies.currencies_dropdown();\n\t\t\tcurrencies.currencies_all();\n\t\t}, () => showAlert('Couldnt refresh currencies','warning'))\n\t},\n\tcurrency_issue_response: () => {\n\t\tcurrency_sf.run(() => {\n\t\t\tcurrency_create.run(() =>\n\t\t\t\t\t{currencies.refresh_currencies(); showAlert('Currency Created', 'success')}, () => showAlert('Couldnt create the Currency in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Currency in chain','error'))\t\t\n\t},\n\tcurrency_mint_response: () => {\n\t\tcurrency_mint_sf.run(() => {\n\t\t\tcurrency_supply_mint.run(() => {\n\t\t\t\t\tcurrency_update_mint.run(()=>\n\t\t\t\t\t\t\t\t\t\t\t {currencies.refresh_currencies(); showAlert('Currency Minted', 'success')},() => showAlert('Couldnt Store the Currency supply in DB', 'error'))\n\t\t}, () => showAlert('Couldnt get the Supply of Currency in Chain','error'))\n\t\t}, () => showAlert('Couldnt Mint the Currency in chain','error'))\t\t\n\t},\n\tcurrency_burn_response: () => {\n\t\tcurrency_burn_sf.run(() => {\n\t\t\tcurrency_supply_burn.run(() => {\n\t\t\t\t\tcurrency_update_burn.run(()=>\n\t\t\t\t\t\t\t\t\t\t\t {currencies.refresh_currencies(); showAlert('Currency Burned', 'success')},() => showAlert('Couldnt Store the Currency supply in DB', 'error'))\n\t\t}, () => showAlert('Couldnt get the Supply of Currency in Chain','error'))\n\t\t}, () => showAlert('Couldnt Burn the Currency in chain','error'))\t\t\n\t},\n\tcurrency_supply_burn:() => {\n\t\tcurrency_supply_burn.run();\n\t},\n\tcurrency_total_supply: () => {\n\t\tstoreValue(\"currency_total_supply\", undefined);\n\t\tstoreValue(\"currency_total_supply\", currency_issuance_sf.data.amount.toString());\n\t\treturn appsmith.store.currency_total_supply\n\t},\n\tcurrency_current_supply: () => {\n\t\tstoreValue(\"currency_current_supply\", undefined);\n\t\tstoreValue(\"currency_current_supply\", currency_supply_sf.data.total_supply.toString());\n\t\treturn appsmith.store.currency_current_supply\n\t},\n\tcurrencies_all: () => {\n\t\tstoreValue(\"currency_table\", undefined);\n\t\tstoreValue(\"currency_table\", get_data.getCurrencyTable(get_currency.data.sf_currency));\n\t\treturn appsmith.store.currency_table\n\t},\n\tcurrencies_dropdown: () => {\n\t\tstoreValue(\"currency_dropdown\", undefined);\n\t\tstoreValue(\"currency_dropdown\", get_data.getCurrency(get_currency.data.sf_currency));\n\t\treturn appsmith.store.currency_dropdown\n\t}\n}",
+    "variables": []
+  },
+  "id": "currency_currencies",
+  "deleted": false,
+  "gitSyncId": "62606d5979083f2f779a7b68_62606ffc79083f2f779a7bfe"
+}

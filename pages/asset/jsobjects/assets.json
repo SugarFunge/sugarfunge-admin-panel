@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "assets",
+    "pageId": "asset",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\trefresh_assets: () => {\n\t\tget_accounts.run(() => {\n\t\t\tget_classes.run(() => {\n\t\t\t\tget_asset.run(() => {\n\t\t\t\t\tassets.assets_class_dropdowns();\n\t\t\t\t\tassets.assets_all();\n\t\t\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t},\n\tasset_create_response: () => {\n\t\tasset_sf.run(() => {\n\t\t\tasset_create.run(() => \n\t\t\t\t\t\t\t\t\t\t\t {assets.refresh_assets(); showAlert('Asset Created', 'success'); get_asset.run()}, () => showAlert('Couldnt create the Asset in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Asset in chain'))\t\t\n\t},\n\tclass_create_response: () => {\n\t\tclass_sf.run(() => {\n\t\t\tclass_create.run(() => {assets.refresh_assets(); showAlert('Class Created', 'success')}, () => showAlert('Couldnt create the Class in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Class in chain'))\t\t\n\t},\n\tasset_balance: () => {\n\t\tstoreValue(\"asset_balance\", undefined);\n\t\tstoreValue(\"asset_balance\", asset_balance_sf.data.amount.toString());\n\t\treturn appsmith.store.asset_balance\n\t},\n\tassets_all: () => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t},\n\tassets_by_account: () => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset_by_account_id.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t},\n\tassets_by_id: () => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset_by_id.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t},\n\tassets_by_class_id: () => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset_by_class_id.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t},\n\tassets_by_chain_ids: () => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset_by_chain_ids.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t},\n\tassets_class_dropdowns: () => {\n\t\tstoreValue(\"accounts\", undefined);\n\t\tstoreValue(\"accounts\", get_data.getAccounts(get_accounts.data.sf_account));\n\t\tstoreValue(\"asset_classes\", undefined);\n\t\tstoreValue(\"asset_classes\", get_data.getClasses(get_classes.data.sf_class));\n\t\treturn appsmith.store.accounts;\n\t}\n}",
+    "variables": []
+  },
+  "id": "asset_assets",
+  "deleted": false,
+  "gitSyncId": "624cd6b8db4feb65f8ca6d5d_624cdd8fdb4feb65f8ca6da4"
+}

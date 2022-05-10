@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "get_data",
+    "pageId": "currency",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCurrencyTable: (data) => {\n\t\tvar editedCurrency = data;\n\t\tvar currencyArray = [];\n\t\tfor (let i = 0; i < editedCurrency.length; i++) {\n\t\t\tvar newCurrency = {\n\t\t\t\t\"id\": editedCurrency[i].id,\n\t\t\t\t\"name\": editedCurrency[i].name,\n\t\t\t\t\"symbol\": editedCurrency[i].symbol,\n\t\t\t\t\"chain_class_id\": editedCurrency[i].chain_class_id,\n\t\t\t\t\"chain_asset_id\": editedCurrency[i].chain_asset_id,\n\t\t\t\t\"total_supply\": editedCurrency[i].total_supply,\n\t\t\t\t\"current_supply\": editedCurrency[i].current_supply\n\t\t\t};\n\t\t\tcurrencyArray.push(newCurrency);\n\t\t}\n\t\treturn currencyArray\t\t\n\t},\n\tgetCurrency: (data) => {\n\t\tvar editedCurrency = data;\n\t\tvar currencyArray = [];\n\t\tfor (let i = 0; i < editedCurrency.length; i++) {\n\t\t\tvar newCurrency = {\n\t\t\t\t\"label\": editedCurrency[i].name,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"id\": editedCurrency[i].id,\n\t\t\t\t\"name\": editedCurrency[i].name,\n\t\t\t\t\"symbol\": editedCurrency[i].symbol,\n\t\t\t\t\"chain_class_id\": editedCurrency[i].chain_class_id,\n\t\t\t\t\"chain_asset_id\": editedCurrency[i].chain_asset_id,\n\t\t\t\t\"total_supply\": editedCurrency[i].total_supply,\n\t\t\t\t\"current_supply\": editedCurrency[i].current_supply\n\t\t\t};\n\t\t\tcurrencyArray.push(newCurrency);\n\t\t}\n\t\treturn currencyArray\t\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "currency_get_data",
+  "deleted": false,
+  "gitSyncId": "62606d5979083f2f779a7b68_62606ffc79083f2f779a7bfc"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "get_data",
+    "pageId": "asset",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetAssets: (data) => {\n\t\tvar editedAssets = data;\n\t\tvar assetArray = [];\n\t\tfor (let i = 0; i < editedAssets.length; i++) {\n\t\t\tvar newAsset = {\n\t\t\t\t\"id\": editedAssets[i].id,\n\t\t\t\t\"name\": editedAssets[i].asset_nft.name,\n\t\t\t\t\"account_id\": editedAssets[i].account_assets[0].account_id,\n\t\t\t\t\"class_id\": editedAssets[i].asset_classes[0].class_id,\n\t\t\t\t\"chain_class_id\": editedAssets[i].asset_classes[0].class.chain_id,\n\t\t\t\t\"chain_id\": editedAssets[i].asset_metadata.chain_id,\n\t\t\t\t\"chain_meta\": editedAssets[i].asset_metadata.chain_meta,\t\t\t\t\n\t\t\t};\n\t\t\tassetArray.push(newAsset);\n\t\t}\n\t\treturn assetArray\t\t\n\t},\n\tgetAccounts: (data) => {\n\t\tvar editedAccounts = data;\n\t\tvar accountArray = [];\n\t\tfor (let i = 0; i < editedAccounts.length; i++) {\n\t\t\tvar newAccount = {\n\t\t\t\t\"label\": editedAccounts[i].account_profile.name,\n\t\t\t\t\"id\": editedAccounts[i].id,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"chain_id\": editedAccounts[i].account_profile.chain_id,\n\t\t\t\t\"seed\": editedAccounts[i].account_auth.seed,\n\t\t\t};\n\t\t\taccountArray.push(newAccount);\n\t\t}\n\t\treturn accountArray\n\t},\n\tgetClasses: (data) => {\n\t\tvar editedClasses = data;\n\t\tvar classArray = [];\n\t\tvar assetsArray = [];\n\t\tvar newClassAssets;\n\t\tfor (let i = 0; i < editedClasses.length; i++) {\n\t\t\tfor (let j=0; j < editedClasses[i].asset_classes.length; j++) {\n\t\t\t\tnewClassAssets = {\n\t\t\t\t\t\"label\": editedClasses[i].asset_classes[j].asset.asset_nft.name,\n\t\t\t\t\t\"value\": j,\n\t\t\t\t\t\"chain_id\": editedClasses[i].asset_classes[j].asset.asset_metadata.chain_id,\n\t\t\t\t}\n\t\t\t\tassetsArray.push(newClassAssets);\n\t\t\t}\n\t\t\tvar newClass = {\n\t\t\t\t\"label\": editedClasses[i].class_profile.name,\n\t\t\t\t\"id\": editedClasses[i].id,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"chain_id\": editedClasses[i].chain_id,\n\t\t\t\t\"assets\": assetsArray,\n\t\t\t};\n\t\t\tclassArray.push(newClass);\n\t\t\tassetsArray = [];\n\t\t}\n\t\treturn classArray\n\t}\n}",
+    "variables": []
+  },
+  "id": "asset_get_data",
+  "deleted": false,
+  "gitSyncId": "624b6e0e4038d3408c0e5b6e_624c7f8215ad2956a375f5c6"
+}
