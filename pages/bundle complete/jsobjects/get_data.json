@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "get_data",
+    "pageId": "bundle complete",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetBundles: (data) => {\n\t\tvar editedAccounts = data;\n\t\tvar bundleArray = [];\n\t\tfor (let i = 0; i < editedAccounts.length; i++) {\n\t\t\tvar newAccount = {\n\t\t\t\t\"label\": editedAccounts[i].chain_bundle_id,\n\t\t\t\t\"value\": editedAccounts[i].chain_bundle_id,\n\t\t\t};\n\t\t\tbundleArray.push(newAccount);\n\t\t}\n\t\treturn bundleArray\n\t}\n}",
+    "variables": []
+  },
+  "id": "bundle complete_get_data",
+  "deleted": false,
+  "gitSyncId": "627c2017d3efed3aab4f7775_627c3ccbd3efed3aab4f7839"
+}
