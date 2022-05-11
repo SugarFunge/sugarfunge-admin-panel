@@ -440,6 +440,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "market_get_data.getMarketsDropdowns": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "market_get_market": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
