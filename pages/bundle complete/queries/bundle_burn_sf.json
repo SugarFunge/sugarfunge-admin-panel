@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "asset_sf",
+    "name": "bundle_burn_sf",
     "datasource": {
       "name": "SugarFunge",
       "pluginId": "restapi-plugin",
@@ -13,11 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "asset",
+    "pageId": "bundle complete",
     "actionConfiguration": {
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
-      "path": "/asset/create",
+      "path": "/bundle/burn",
       "headers": [
         {
           "key": "content-type",
@@ -26,7 +26,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n    \"seed\": {{CreateAsset_form.data.CreateAsset_seed}},\n    \"class_id\": {{CreateAsset_form.data.CreateAsset_chainClassID}},\n    \"asset_id\": {{CreateAsset_form.data.CreateAsset_assetID}},\n    \"metadata\": {{CreateAsset_form.data.CreateAsset_metadata}}\n}",
+      "body": "{\n    \"seed\": {{BurnBundle_form.data.BurnBundle_seed}},\n    \"from\": {{BurnBundle_form.data.BurnBundle_from}},\n    \"to\": {{BurnBundle_form.data.BurnBundle_to}},\n    \"bundle_id\": {{BurnBundle_form.data.BurnBundle_bundleID}},\n    \"amount\": {{BurnBundle_form.data.BurnBundle_amount}}\n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
@@ -49,17 +49,18 @@
     ],
     "messages": [],
     "jsonPathKeys": [
-      "CreateAsset_form.data.CreateAsset_assetID",
-      "CreateAsset_form.data.CreateAsset_chainClassID",
-      "CreateAsset_form.data.CreateAsset_metadata",
-      "CreateAsset_form.data.CreateAsset_seed"
+      "BurnBundle_form.data.BurnBundle_amount",
+      "BurnBundle_form.data.BurnBundle_bundleID",
+      "BurnBundle_form.data.BurnBundle_from",
+      "BurnBundle_form.data.BurnBundle_seed",
+      "BurnBundle_form.data.BurnBundle_to"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "asset_asset_sf",
+  "id": "bundle complete_bundle_burn_sf",
   "deleted": false,
-  "gitSyncId": "6234de1c184c4656851a85d4_623bab5eda62f5699d95980a"
+  "gitSyncId": "627c2017d3efed3aab4f7775_627c3ccad3efed3aab4f781b"
 }

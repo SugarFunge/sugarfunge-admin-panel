@@ -7,7 +7,8 @@
     "market",
     "account",
     "currency",
-    "escrow"
+    "escrow",
+    "bundle complete"
   ],
   "publishedPageOrder": [
     "bundle",
@@ -15,7 +16,8 @@
     "market",
     "account",
     "currency",
-    "escrow"
+    "escrow",
+    "bundle complete"
   ],
   "publishedDefaultPageName": "asset",
   "unpublishedDefaultPageName": "asset",
@@ -188,6 +190,82 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "bundle complete_bundle.bundle_all": {
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
+    },
+    "bundle complete_bundle.bundle_by_chain": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_by_id": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_create_response": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_dropdowns": {
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
+    },
+    "bundle complete_bundle.bundle_schema": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_schema_asset_amounts": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_schema_asset_ids": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.bundle_schema_class_ids": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle.refresh_bundles": {
+      "unpublishedUserSetOnLoad": true,
+      "publishedUserSetOnLoad": true
+    },
+    "bundle complete_bundle.submit_schema": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle_burn_sf": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle_mint_sf": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle_register": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_bundle_register_sf": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_get_bundle": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_get_bundle_by_chain": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_get_bundle_by_id": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "bundle complete_get_data.getBundles": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "bundle_bundle.bundle_all": {
       "unpublishedUserSetOnLoad": true,
       "publishedUserSetOnLoad": true
@@ -229,10 +307,6 @@
       "publishedUserSetOnLoad": true
     },
     "bundle_bundle.submit_schema": {
-      "unpublishedUserSetOnLoad": false,
-      "publishedUserSetOnLoad": false
-    },
-    "bundle_bundle_burn_sf": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
@@ -437,6 +511,10 @@
       "publishedUserSetOnLoad": false
     },
     "market_get_data.getMarkets": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "market_get_data.getMarketsDropdowns": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },

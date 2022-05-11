@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(data) => {\n\t\tvar editedMarkets = data;\n\t\tvar MarketArray = [];\n\t\tfor (let i = 0; i < editedMarkets.length; i++) {\n\t\t\tvar newMarket = {\n\t\t\t\t\"label\": editedMarkets[i].chain_id,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"market_id\": editedMarkets[i].id,\n\t\t\t\t\"market_rate_id\": editedMarkets[i].market_rates[0].id,\t\t\t\t\n\t\t\t\t\"chain_id\": editedMarkets[i].chain_id,\n\t\t\t\t\"market_rate_chain_id\": editedMarkets[i].market_rates[0].chain_id,\n\t\t\t};\n\t\t\tMarketArray.push(newMarket);\n\t\t}\n\t\treturn MarketArray\t\t\n\t}",
+      "body": "(data) => {\n\t\tvar editedMarkets = data;\n\t\tvar MarketArray = [];\n\t\tfor (let i = 0; i < editedMarkets.length; i++) {\n\t\t\tvar newMarket = {\n\t\t\t\t\"market_id\": editedMarkets[i].id,\n\t\t\t\t\"market_rate_id\": editedMarkets[i].market_rates[0].id,\t\t\t\t\n\t\t\t\t\"chain_id\": editedMarkets[i].chain_id,\n\t\t\t\t\"market_rate_chain_id\": editedMarkets[i].market_rates[0].chain_id,\n\t\t\t};\n\t\t\tMarketArray.push(newMarket);\n\t\t}\n\t\treturn MarketArray\t\t\n\t}",
       "jsArguments": [
         {
           "name": "data"
@@ -37,7 +37,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(data) => {\n\t\tvar editedMarkets = data;\n\t\tvar MarketArray = [];\n\t\tfor (let i = 0; i < editedMarkets.length; i++) {\n\t\t\tvar newMarket = {\n\t\t\t\t\"label\": editedMarkets[i].chain_id,\n\t\t\t\t\"value\": i,\n\t\t\t\t\"market_id\": editedMarkets[i].id,\n\t\t\t\t\"market_rate_id\": editedMarkets[i].market_rates[0].id,\t\t\t\t\n\t\t\t\t\"chain_id\": editedMarkets[i].chain_id,\n\t\t\t\t\"market_rate_chain_id\": editedMarkets[i].market_rates[0].chain_id,\n\t\t\t};\n\t\t\tMarketArray.push(newMarket);\n\t\t}\n\t\treturn MarketArray\t\t\n\t}"
+      "(data) => {\n\t\tvar editedMarkets = data;\n\t\tvar MarketArray = [];\n\t\tfor (let i = 0; i < editedMarkets.length; i++) {\n\t\t\tvar newMarket = {\n\t\t\t\t\"market_id\": editedMarkets[i].id,\n\t\t\t\t\"market_rate_id\": editedMarkets[i].market_rates[0].id,\t\t\t\t\n\t\t\t\t\"chain_id\": editedMarkets[i].chain_id,\n\t\t\t\t\"market_rate_chain_id\": editedMarkets[i].market_rates[0].chain_id,\n\t\t\t};\n\t\t\tMarketArray.push(newMarket);\n\t\t}\n\t\treturn MarketArray\t\t\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
