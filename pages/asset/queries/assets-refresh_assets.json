@@ -21,7 +21,7 @@
       "encodeParamsToggle": true,
       "body": "() => {\n\t\tget_accounts.run(() => {\n\t\t\tget_classes.run(() => {\n\t\t\t\tget_asset.run(() => {\n\t\t\t\t\tassets.assets_class_dropdowns();\n\t\t\t\t\tassets.assets_all();\n\t\t\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t\t}, () => showAlert('Couldnt refresh classes or assets','warning'))\n\t}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

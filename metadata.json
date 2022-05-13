@@ -510,6 +510,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "escrow_get_escrow_classes": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "market_get_data.getMarkets": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false

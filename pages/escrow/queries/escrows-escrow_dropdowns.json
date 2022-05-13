@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n\t\tstoreValue(\"escrows\", undefined);\n\t\tstoreValue(\"escrows\", get_data.getEscrows(get_escrow.data.sf_escrow));\n\t\tstoreValue(\"escrows_classes\", undefined);\n\t\tstoreValue(\"escrows_classes\", get_data.getClassEscrows(get_escrow.data.sf_escrow));\n\t\treturn appsmith.store.escrows;\n\t}",
+      "body": "() => {\n\t\tstoreValue(\"escrows\", undefined);\n\t\tstoreValue(\"escrows\", get_data.getEscrows(get_escrow.data.sf_escrow));\n\t\tstoreValue(\"escrows_classes\", undefined);\n\t\tstoreValue(\"escrows_classes\", get_data.getClassEscrows(get_escrow_classes.data.sf_escrow_class));\n\t\treturn appsmith.store.escrows;\n\t}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -33,7 +33,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n\t\tstoreValue(\"escrows\", undefined);\n\t\tstoreValue(\"escrows\", get_data.getEscrows(get_escrow.data.sf_escrow));\n\t\tstoreValue(\"escrows_classes\", undefined);\n\t\tstoreValue(\"escrows_classes\", get_data.getClassEscrows(get_escrow.data.sf_escrow));\n\t\treturn appsmith.store.escrows;\n\t}"
+      "() => {\n\t\tstoreValue(\"escrows\", undefined);\n\t\tstoreValue(\"escrows\", get_data.getEscrows(get_escrow.data.sf_escrow));\n\t\tstoreValue(\"escrows_classes\", undefined);\n\t\tstoreValue(\"escrows_classes\", get_data.getClassEscrows(get_escrow_classes.data.sf_escrow_class));\n\t\treturn appsmith.store.escrows;\n\t}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

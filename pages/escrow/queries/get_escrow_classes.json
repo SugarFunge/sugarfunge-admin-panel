@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "escrow_create",
+    "name": "get_escrow_classes",
     "datasource": {
       "name": "Hasura",
       "pluginId": "restapi-plugin",
@@ -17,7 +17,7 @@
     "actionConfiguration": {
       "timeoutInMillisecond": 100000,
       "paginationType": "NONE",
-      "path": "/api/rest/escrows",
+      "path": "/api/rest/escrows/classes",
       "headers": [
         {
           "key": "content-type",
@@ -30,8 +30,8 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n    \"escrow_class_id\": {{CreateEscrow_ID.text}},\n\t\t\"chain_id\" : {{escrow_create_sf.data.escrow}},\n\t\t\"asset_id\": {{escrow_create_sf.data.asset_id}}\n}",
-      "httpMethod": "POST",
+      "body": "",
+      "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -41,28 +41,20 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [
       "'Query timeout' field must be an integer between 0 and 60000"
     ],
     "messages": [],
-    "jsonPathKeys": [
-      "CreateEscrow_ID.text",
-      "escrow_create_sf.data.asset_id",
-      "escrow_create_sf.data.escrow"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "escrow_escrow_create",
+  "id": "escrow_get_escrow_classes",
   "deleted": false,
-  "gitSyncId": "6269d01965f4407bf3f6620f_626b0071d3ac824cce0551f5"
+  "gitSyncId": "626963714f1cdf5623f836b1_6269906637427d7fa9537825"
 }

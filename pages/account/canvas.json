@@ -1133,7 +1133,80 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "account_account_create_sf",
+              "name": "account_create_sf",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "account_get_accounts",
+              "name": "get_accounts",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "CreateAccount_form.data.CreateAccount_name",
+                "CreateAccount_form.data.CreateAccount_password",
+                "account_create_sf.data.account",
+                "account_create_sf.data.seed"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "account_accounts.refresh_accounts",
+              "name": "accounts.refresh_accounts",
+              "collectionId": "account_accounts",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n\t\tget_accounts.run(() => {\n\t\t\taccounts.account_dropdowns();\n\t\t\taccounts.accounts_all();\n\t\t}, () => showAlert('Couldnt refresh accounts','warning'))\n\t}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "widgetNames": [
+          "AccountFunctions_tab",
+          "Account_balance_label",
+          "AssetAll_submit",
+          "BalanceAccount_accountID",
+          "BalanceAccount_accountIDSelect",
+          "BalanceAccount_form",
+          "BalanceAccount_title",
+          "Canvas3",
+          "Canvas4",
+          "Canvas5",
+          "CreateAccount",
+          "CreateAccount_form",
+          "CreateAccount_name",
+          "CreateAccount_password",
+          "CreateAccount_submit",
+          "CreateAccount_title",
+          "CreateAsset",
+          "CreateAsset_reset",
+          "CreateAsset_submit",
+          "FundAccount_accountID",
+          "FundAccount_amount",
+          "FundAccount_form",
+          "FundAccount_seed",
+          "FundAccount_seedSelection",
+          "FundAccount_title",
+          "FundAccount_toSelection",
+          "MainContainer",
+          "MintAsset",
+          "MintAsset_submit",
+          "Table1",
+          "Text1",
+          "account_balance_output"
+        ],
         "validOnPageLoadActions": true,
         "id": "account",
         "deleted": false,

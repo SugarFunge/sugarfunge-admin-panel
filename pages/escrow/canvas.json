@@ -92,10 +92,10 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "id",
-                "class_id",
-                "metadata",
+                "chain_id",
+                "asset_id",
                 "escrow_shares",
-                "chain_id"
+                "escrow_class"
               ],
               "isVisibleDownload": true,
               "dynamicPropertyPathList": [],
@@ -113,43 +113,26 @@
               "dynamicTriggerPathList": [],
               "dynamicBindingPathList": [
                 {
-                  "key": "primaryColumns.class_id.computedValue"
-                },
-                {
                   "key": "tableData"
                 },
                 {
                   "key": "primaryColumns.id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.metadata.computedValue"
-                },
-                {
                   "key": "primaryColumns.escrow_shares.computedValue"
                 },
                 {
                   "key": "primaryColumns.chain_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.asset_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.escrow_class.computedValue"
                 }
               ],
               "leftColumn": 4,
               "primaryColumns": {
-                "class_id": {
-                  "index": 0,
-                  "width": 150,
-                  "id": "class_id",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "class_id",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
-                },
                 "id": {
                   "index": 0,
                   "width": 150,
@@ -166,23 +149,6 @@
                   "isDerived": false,
                   "label": "id",
                   "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
-                },
-                "metadata": {
-                  "index": 2,
-                  "width": 150,
-                  "id": "metadata",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "PARAGRAPH",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "metadata",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.metadata))}}"
                 },
                 "escrow_shares": {
                   "index": 3,
@@ -217,6 +183,40 @@
                   "isDerived": false,
                   "label": "chain_id",
                   "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
+                },
+                "asset_id": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "asset_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "asset_id",
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}"
+                },
+                "escrow_class": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "escrow_class",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "escrow_class",
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.escrow_class))}}"
                 }
               },
               "delimiter": ",",
@@ -245,14 +245,14 @@
                 "step": 62,
                 "status": 75,
                 "chain_id": 248,
-                "id": 66,
+                "id": 296,
                 "class_id": 107,
-                "asset_id": 235,
+                "asset_id": 85,
                 "action": 135,
                 "amount": 122,
                 "from": 133,
-                "escrow_shares": 60,
-                "metadata": 79
+                "escrow_shares": 160,
+                "metadata": 227
               }
             },
             {
@@ -260,7 +260,7 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
-              "topRow": 5,
+              "topRow": 6,
               "bottomRow": 90,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",

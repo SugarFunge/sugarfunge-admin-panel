@@ -21,7 +21,7 @@
       "encodeParamsToggle": true,
       "body": "() => {\n\t\tclass_sf.run(() => {\n\t\t\tclass_create.run(() => {assets.refresh_assets(); showAlert('Class Created', 'success')}, () => showAlert('Couldnt create the Class in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Class in chain'))\t\t\n\t}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [

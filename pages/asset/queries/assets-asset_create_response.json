@@ -21,7 +21,7 @@
       "encodeParamsToggle": true,
       "body": "() => {\n\t\tasset_sf.run(() => {\n\t\t\tasset_create.run(() => \n\t\t\t\t\t\t\t\t\t\t\t {assets.refresh_assets(); showAlert('Asset Created', 'success'); get_asset.run()}, () => showAlert('Couldnt create the Asset in DB', 'error'))\n\t\t}, () => showAlert('Couldnt create the Asset in chain'))\t\t\n\t}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
