@@ -157,7 +157,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "account_id",
+                  "label": "account id",
                   "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.account_id))}}"
                 },
                 "class_id": {
@@ -174,7 +174,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "class_id",
+                  "label": "class id",
                   "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
                 },
                 "chain_id": {
@@ -191,7 +191,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "chain_id",
+                  "label": "chain id",
                   "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
                 },
                 "chain_meta": {
@@ -208,7 +208,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "chain_meta",
+                  "label": "chain meta",
                   "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_meta))}}"
                 },
                 "chain_class_id": {
@@ -225,7 +225,7 @@
                   "isDisabled": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "chain_class_id",
+                  "label": "chain class id",
                   "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_class_id))}}"
                 }
               },
