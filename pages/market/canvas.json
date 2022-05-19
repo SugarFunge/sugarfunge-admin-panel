@@ -202,8 +202,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
-              "topRow": 6,
-              "bottomRow": 130,
+              "topRow": 1,
+              "bottomRow": 125,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -211,7 +211,7 @@
               "animateLoading": true,
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
-              "leftColumn": 5,
+              "leftColumn": 3,
               "dynamicBindingPathList": [],
               "children": [
                 {
@@ -1946,7 +1946,7 @@
                 }
               ],
               "key": "kxstn148ki",
-              "rightColumn": 60,
+              "rightColumn": 58,
               "widgetId": "2gto2u2hng",
               "defaultTab": "Create market",
               "shouldShowTabs": true,
