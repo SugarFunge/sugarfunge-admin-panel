@@ -2680,7 +2680,7 @@
                       "parentColumnSpace": 16.5537109375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
-                      "leftColumn": 14,
+                      "leftColumn": 16,
                       "dynamicBindingPathList": [
                         {
                           "key": "text"
@@ -2689,7 +2689,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{appsmith.store.asset_balance}}",
                       "key": "mh74kjbhw5",
-                      "rightColumn": 63,
+                      "rightColumn": 64,
                       "textAlign": "LEFT",
                       "widgetId": "khz9s5gttp",
                       "isVisible": true,
@@ -2714,12 +2714,12 @@
                       "parentColumnSpace": 16.5537109375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
-                      "leftColumn": 1,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Balance amount:",
                       "key": "mh74kjbhw5",
-                      "rightColumn": 14,
+                      "rightColumn": 16,
                       "textAlign": "LEFT",
                       "widgetId": "twwtxol4vj",
                       "isVisible": true,
