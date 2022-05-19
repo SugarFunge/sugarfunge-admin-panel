@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1960,
+          "bottomRow": 2790,
           "containerStyle": "none",
           "snapRows": 54,
           "parentRowSpace": 1,
@@ -1990,8 +1990,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
-              "topRow": 166,
-              "bottomRow": 194,
+              "topRow": 249,
+              "bottomRow": 277,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -2011,7 +2011,7 @@
                   "key": "primaryColumns.info.computedValue"
                 }
               ],
-              "leftColumn": 25,
+              "leftColumn": 2,
               "primaryColumns": {
                 "data": {
                   "index": 0,
@@ -2051,7 +2051,7 @@
               "delimiter": ",",
               "key": "crxhqnbae3",
               "derivedColumns": {},
-              "rightColumn": 38,
+              "rightColumn": 15,
               "textSize": "PARAGRAPH",
               "widgetId": "tp2lft1d2z",
               "isVisibleFilters": true,
@@ -2127,7 +2127,9 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 100000
-            },
+            }
+          ],
+          [
             {
               "id": "market_market.refresh_markets",
               "name": "market.refresh_markets",
