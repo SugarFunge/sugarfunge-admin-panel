@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1400,
+          "bottomRow": 1360,
           "containerStyle": "none",
           "snapRows": 61,
           "parentRowSpace": 1,
@@ -33,8 +33,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "FormButton",
               "iconSVG": "/static/media/icon.c8f649ed.svg",
-              "topRow": 103,
-              "bottomRow": 107,
+              "topRow": 99,
+              "bottomRow": 103,
               "type": "FORM_BUTTON_WIDGET",
               "hideCard": true,
               "animateLoading": true,
@@ -63,8 +63,8 @@
               "widgetName": "EscrowTable_title",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
-              "topRow": 99,
-              "bottomRow": 103,
+              "topRow": 95,
+              "bottomRow": 99,
               "type": "TEXT_WIDGET",
               "hideCard": false,
               "animateLoading": true,
@@ -101,8 +101,8 @@
               "dynamicPropertyPathList": [],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
-              "topRow": 110,
-              "bottomRow": 138,
+              "topRow": 106,
+              "bottomRow": 134,
               "isSortable": true,
               "parentRowSpace": 10,
               "type": "TABLE_WIDGET",
@@ -260,8 +260,8 @@
               "isCanvas": true,
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
-              "topRow": 6,
-              "bottomRow": 96,
+              "topRow": 2,
+              "bottomRow": 92,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -2319,7 +2319,39 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "escrow_get_escrow",
+              "name": "get_escrow",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 100000
+            },
+            {
+              "id": "escrow_get_escrow_classes",
+              "name": "get_escrow_classes",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 100000
+            }
+          ],
+          [
+            {
+              "id": "escrow_escrows.refresh_escrows",
+              "name": "escrows.refresh_escrows",
+              "collectionId": "escrow_escrows",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "() => {\n\t\tget_escrow_classes.run(() => {\n\t\t\tget_escrow.run(() => {\n\t\t\t\tescrows.escrow_dropdowns();\n\t\t\t\tescrows.escrow_all();\n\t\t\t}, () => showAlert('Couldnt refresh escrows','warning'))\n\t\t}, () => showAlert('Couldnt refresh escrows classes','warning'))\n\t}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "Canvas1",
           "Canvas2",
@@ -2382,7 +2414,7 @@
           "SweepEscrow_to",
           "SweepEscrow_toSelection"
         ],
-        "validOnPageLoadActions": false,
+        "validOnPageLoadActions": true,
         "id": "escrow",
         "deleted": false,
         "policies": [],
