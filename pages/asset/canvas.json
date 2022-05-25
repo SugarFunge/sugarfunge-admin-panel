@@ -19,13 +19,14 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 550,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "AssetFunctions_tab",
               "isCanvas": true,
               "displayName": "Tabs",
@@ -40,10 +41,15 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -60,22 +66,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "CreateClass_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "CreateClass_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "o1oooax5v7",
                       "topRow": 1,
                       "bottomRow": 51,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "602odeun65",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -83,29 +83,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateClass",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "f2q4t76giw",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 490,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "o1oooax5v7",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -124,25 +117,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "obacu046ll",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateClass_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -161,25 +161,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "6idxqc4lcs",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "ID:",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateClass_accountSelection.value].id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_chainAccountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -198,25 +205,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "ov592cu513",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateClass_accountSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -239,22 +253,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "57q2hnvezu",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_description",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -269,25 +290,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Class Description",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 38,
                               "widgetId": "203pj9rbtl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Class Description",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "Class Description"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_name",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -302,25 +331,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Class Name",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 38,
                               "widgetId": "nb0bfy0zal",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Class Name",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "Class Name"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_metadata",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -336,26 +373,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Class metadata",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 38,
                               "widgetId": "z6gnjnmk25",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Class Metadata:",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{\"userdata\": \"some data\" }"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -365,11 +415,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Create Class",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "d6xyovy1n8",
@@ -380,10 +432,12 @@
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_submit",
                               "onClick": "{{assets.class_create_response()}}",
                               "buttonColor": "#03B365",
@@ -403,6 +457,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "p65bzq6auv",
@@ -413,10 +468,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -431,6 +488,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "qd4asfjuqk",
@@ -441,9 +499,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_classID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -458,25 +518,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "ChainClassID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 38,
                               "widgetId": "mwmzc5ygck",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Class ID:",
                               "version": 2,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateClass_accountSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -499,30 +567,57 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "8zskgvto87",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "f2q4t76giw",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "f2q4t76giw",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "o1oooax5v7",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "o1oooax5v7",
+                      "isVisible": true,
+                      "parentId": "602odeun65",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Create class",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -531,10 +626,12 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -551,22 +648,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "CreateAsset_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "CreateClass_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "clnmflhzpe",
                       "topRow": 1,
                       "bottomRow": 51,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "czc4104r7a",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -574,29 +665,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "wmpy0mxbo1",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 490,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "clnmflhzpe",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_chainClassID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -615,25 +699,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "v1a9ob226i",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[CreateAsset_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -652,25 +743,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "ypt3qu4y6k",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "ID:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[CreateAsset_classIDSelection.value].id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -693,22 +791,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "3uuhgi51yb",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -727,25 +832,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "k4rbf2gp2m",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateAsset_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_accountSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -768,22 +880,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "0fq84upz1o",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -802,25 +921,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "zeitkp48jl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "ID:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateAsset_accountSelection.value].id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -843,22 +969,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "eoznx43hj5",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_assetID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -873,25 +1006,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Chain Asset ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "tfsasur3hz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Asset ID:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_name",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -906,25 +1047,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Asset Name",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "eg5nqo8vr7",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Asset Name:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "Asset Name"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_metadata",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -940,26 +1089,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Asset metadata",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "1m0393tgg5",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Asset Metadata:",
                               "version": 2,
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{ \"data\": \"somedata\" }"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -969,11 +1131,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Create Asset",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "g1cuj22as1",
@@ -984,10 +1148,12 @@
                               "parentId": "wmpy0mxbo1",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_submit",
                               "onClick": "{{assets.asset_create_response()}}",
                               "buttonColor": "#03B365",
@@ -1008,6 +1174,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "wcbvwwrt9e",
@@ -1018,10 +1185,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1036,6 +1205,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "zlf63tnkeu",
@@ -1046,17 +1216,39 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "wmpy0mxbo1",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "clnmflhzpe",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "clnmflhzpe",
+                      "isVisible": true,
+                      "parentId": "czc4104r7a",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Create asset",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -1065,10 +1257,12 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab708n46q54n",
+                  "boxShadow": "none",
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1084,22 +1278,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "MintAsset_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Collection_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "qh57e8iwe1",
                       "topRow": 2,
                       "bottomRow": 41,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "dked720a4y",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -1107,29 +1295,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MintAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "ms5v13juca",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "qh57e8iwe1",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1148,25 +1329,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "i1vnftxsw1",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[MintAsset_classIDSelection.value].assets[MintAsset_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1189,22 +1377,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "ai5yffhtp3",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1223,25 +1418,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "rfiw7xi98i",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[MintAsset_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_accountIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1264,22 +1466,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "y2v17vqem4",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1298,25 +1507,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2yehg5r3am",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MintAsset_accountIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1339,22 +1555,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "jrtsdqdyfr",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1373,25 +1596,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2aptmeci1v",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MintAsset_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1406,26 +1636,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "5o7mc0k38u",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "100"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -1435,11 +1678,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Mint Asset",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 52,
                               "textAlign": "LEFT",
                               "widgetId": "mxemhnx648",
@@ -1450,10 +1695,12 @@
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_submit",
                               "onClick": "{{asset_mint_sf.run(() => showAlert('Asset minted','success'), () => showAlert('Couldnt mint the asset','error'))}}",
                               "buttonColor": "#03B365",
@@ -1473,6 +1720,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "0qpmspcmnh",
@@ -1483,10 +1731,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1501,6 +1751,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "w8ju72kw96",
@@ -1511,9 +1762,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1536,29 +1789,56 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[MintAsset_classIDSelection.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "ndzr1zef4l",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "ms5v13juca",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "ms5v13juca",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "qh57e8iwe1",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "qh57e8iwe1",
+                      "isVisible": true,
+                      "parentId": "dked720a4y",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Mint asset",
                   "rightColumn": 783.25,
                   "detachFromLayout": true,
@@ -1568,10 +1848,12 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabbryz7ubl1t",
+                  "boxShadow": "none",
                   "widgetName": "Canvas6",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1587,22 +1869,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "BurnAsset_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Collection_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "7qhssyipn0",
                       "topRow": 2,
                       "bottomRow": 49,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "4zzoorsox6",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -1610,29 +1886,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "BurnAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "mqh17603qv",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "7qhssyipn0",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1655,22 +1924,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "vbz54f9zym",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1689,25 +1965,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "afivbf9c8h",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BurnAsset_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1722,26 +2005,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "cjo3soxoxz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "100"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -1751,11 +2047,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Burn Asset",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 52,
                               "textAlign": "LEFT",
                               "widgetId": "rllrnwntij",
@@ -1766,10 +2064,12 @@
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_submit",
                               "onClick": "{{asset_burn_sf.run(() => showAlert('Asset burned','success'), () => showAlert('Couldnt burn the asset','error'))}}",
                               "buttonColor": "#03B365",
@@ -1790,6 +2090,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "2pgeft8t5b",
@@ -1800,10 +2101,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1818,6 +2121,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "stumumq3fu",
@@ -1828,9 +2132,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1849,25 +2155,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "grukaw4skp",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BurnAsset_accountIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_accountIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1890,22 +2203,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "0o9j0qpvu8",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1924,25 +2244,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "spofpfxvda",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[BurnAsset_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1965,22 +2292,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "3fqykuw9pg",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1999,25 +2333,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2ukn4cy7zh",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[BurnAsset_classIDSelection.value].assets[BurnAsset_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnAsset_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2040,29 +2381,56 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[BurnAsset_classIDSelection.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "mgz6dnssn5",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mqh17603qv",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "mqh17603qv",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "7qhssyipn0",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "7qhssyipn0",
+                      "isVisible": true,
+                      "parentId": "4zzoorsox6",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Burn asset",
                   "rightColumn": 783.25,
                   "detachFromLayout": true,
@@ -2072,10 +2440,12 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab4za4mwy2qr",
+                  "boxShadow": "none",
                   "widgetName": "Canvas7",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -2091,22 +2461,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "BalanceAsset_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Collection_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "mpgil93brf",
                       "topRow": 1,
                       "bottomRow": 34,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "w351kt5cjh",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -2114,30 +2478,28 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "BalanceAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "rc8jmyvusj",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "mpgil93brf",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -2147,11 +2509,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Balance Asset",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "9njly3d6rp",
@@ -2162,10 +2526,12 @@
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_submit",
                               "onClick": "{{asset_balance_sf.run(() => assets.asset_balance(), () => showAlert('Invalid inputs','error'))}}",
                               "buttonColor": "#03B365",
@@ -2186,6 +2552,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "syqnl25dss",
@@ -2196,9 +2563,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2217,25 +2586,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "fso6md3e2v",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BalanceAsset_accountIDSelectio.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_accountIDSelectio",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2258,22 +2634,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "8iq0uva9iz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2292,25 +2675,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "wsg7ys3yfl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[BalanceAsset_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2333,22 +2723,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "16o7bjeey9",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2367,25 +2764,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "pvtukds3da",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[BalanceAsset_classIDSelection.value].assets[BalanceAsset_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAsset_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2408,28 +2812,55 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[BalanceAsset_classIDSelection.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "x7g9i874uf",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "rc8jmyvusj",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "rc8jmyvusj",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "mpgil93brf",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "mpgil93brf",
+                      "isVisible": true,
+                      "parentId": "w351kt5cjh",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "asset_balance_output",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -2442,6 +2873,7 @@
                       "parentColumnSpace": 16.5537109375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 24,
                       "dynamicBindingPathList": [
                         {
@@ -2451,6 +2883,7 @@
                       "truncateButtonColor": "#FFC13D",
                       "text": "{{appsmith.store.asset_balance}}",
                       "key": "mh74kjbhw5",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 61,
                       "textAlign": "LEFT",
                       "widgetId": "otimrqtkvc",
@@ -2461,9 +2894,11 @@
                       "parentId": "w351kt5cjh",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING3"
+                      "borderRadius": "0px",
+                      "fontSize": "1rem"
                     },
                     {
+                      "boxShadow": "none",
                       "widgetName": "Asset_balance_label",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -2476,11 +2911,13 @@
                       "parentColumnSpace": 16.5537109375,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
+                      "fontFamily": "System Default",
                       "leftColumn": 3,
                       "dynamicBindingPathList": [],
                       "truncateButtonColor": "#FFC13D",
                       "text": "Balance amount:",
                       "key": "mh74kjbhw5",
+                      "labelTextSize": "0.875rem",
                       "rightColumn": 24,
                       "textAlign": "LEFT",
                       "widgetId": "jn4ed9uard",
@@ -2491,10 +2928,12 @@
                       "parentId": "w351kt5cjh",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "fontSize": "HEADING3"
+                      "borderRadius": "0px",
+                      "fontSize": "1rem"
                     }
                   ],
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Balance asset",
                   "rightColumn": 783.25,
                   "detachFromLayout": true,
@@ -2504,10 +2943,12 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabylay2raa0z",
+                  "boxShadow": "none",
                   "widgetName": "Canvas8",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -2523,6 +2964,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "TransferAsset_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -2540,29 +2982,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "TransferAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "5kclvuwi26",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 420,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "w71lh016s5",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_toSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2585,22 +3020,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "z5lxxdere6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_to",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2619,25 +3061,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "5jj08cpq7r",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[TransferAsset_toSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -2652,25 +3101,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "4m4vbfyehr",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "100"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2693,22 +3150,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "pd9yyyojhh",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2727,25 +3191,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "h06uw25vtc",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[TransferAsset_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_fromSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2768,22 +3239,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "z4ng3rqcyd",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_from",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2802,25 +3280,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2nocajbrlv",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[TransferAsset_fromSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2843,22 +3328,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "mweeq5phhr",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2877,25 +3369,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "ifmgqf1vrx",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[TransferAsset_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2918,22 +3417,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[TransferAsset_classIDSelection.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "2kncyso0a6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2952,26 +3458,38 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "kastale1m5",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[TransferAsset_classIDSelection.value].assets[TransferAsset_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -2981,11 +3499,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Transfer Asset",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 48,
                               "textAlign": "LEFT",
                               "widgetId": "o8m3nibqj3",
@@ -2996,10 +3516,12 @@
                               "parentId": "5kclvuwi26",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_submit",
                               "onClick": "{{asset_transfer_sf.run(() => showAlert('Asset transfered','success'), () => showAlert('Couldnt transfer the asset','error'))}}",
                               "buttonColor": "#03B365",
@@ -3019,6 +3541,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "majiwopomb",
@@ -3029,10 +3552,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "TransferAsset_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -3047,6 +3572,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "l6v9pbd7tj",
@@ -3057,23 +3583,38 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "5kclvuwi26",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "w71lh016s5",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "w71lh016s5",
                       "isVisible": true,
                       "parentId": "zzjlo3xn06",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Transfer asset",
                   "rightColumn": 783.25,
                   "detachFromLayout": true,
@@ -3083,12 +3624,15 @@
                   "version": 1,
                   "parentId": "5a7qvps5ss",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "ptaaj6z2cw",
+              "labelTextSize": "0.875rem",
               "rightColumn": 58,
               "widgetId": "zi9rwoyf25",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Create class",
               "shouldShowTabs": true,
               "tabsObj": {
@@ -3139,10 +3683,17 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "AssetTable_title",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 62,
@@ -3154,11 +3705,13 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
+              "fontFamily": "System Default",
               "leftColumn": 4,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Assets",
               "key": "mtp258pcqb",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "d5v4k02kse",
@@ -3169,10 +3722,12 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
               "resetFormOnClick": true,
+              "boxShadow": "none",
               "widgetName": "AssetAll_submit",
               "onClick": "{{assets.refresh_assets()}}",
               "buttonColor": "#03B365",
@@ -3193,6 +3748,7 @@
               "dynamicBindingPathList": [],
               "text": "Refresh",
               "key": "1exwuhepck",
+              "labelTextSize": "0.875rem",
               "rightColumn": 19,
               "isDefaultClickDisabled": true,
               "widgetId": "oegp5zj1s1",
@@ -3203,9 +3759,11 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": true,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Asset_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -3255,6 +3813,9 @@
                 },
                 {
                   "key": "primaryColumns.chain_class_id.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 4,
@@ -3266,7 +3827,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3274,7 +3835,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "name": {
                   "index": 1,
@@ -3283,7 +3846,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3291,7 +3854,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "account_id": {
                   "index": 2,
@@ -3300,7 +3865,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3308,7 +3873,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "account id",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.account_id))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.account_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "class_id": {
                   "index": 3,
@@ -3317,7 +3884,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3325,7 +3892,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "class id",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_id": {
                   "index": 4,
@@ -3334,7 +3903,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3342,7 +3911,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain id",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_meta": {
                   "index": 5,
@@ -3351,7 +3922,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3359,7 +3930,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain meta",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_meta))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_meta))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_class_id": {
                   "index": 4,
@@ -3368,7 +3941,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -3376,15 +3949,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain class id",
-                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_class_id))}}"
+                  "computedValue": "{{Asset_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_class_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "bd8vg5pufq",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "475xxbulr1",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.assets_table}}",
               "isVisible": true,
@@ -3398,6 +3975,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {

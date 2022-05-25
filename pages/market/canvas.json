@@ -19,14 +19,20 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 550,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "MarketTable_title",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 124,
@@ -38,11 +44,13 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
+              "fontFamily": "System Default",
               "leftColumn": 3,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Markets",
               "key": "mtp258pcqb",
+              "labelTextSize": "0.875rem",
               "rightColumn": 58,
               "textAlign": "LEFT",
               "widgetId": "m002c70z31",
@@ -53,9 +61,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Market_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -93,6 +103,9 @@
                 },
                 {
                   "key": "primaryColumns.market_rate_chain_id.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 3,
@@ -104,7 +117,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -112,7 +125,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain_id",
-                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
+                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "market_rate_id": {
                   "index": 2,
@@ -121,7 +136,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -129,7 +144,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "market_rate_id",
-                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_rate_id))}}"
+                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_rate_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "market_id": {
                   "index": 0,
@@ -138,7 +155,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -146,7 +163,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "market_id",
-                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_id))}}"
+                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "market_rate_chain_id": {
                   "index": 5,
@@ -155,7 +174,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -163,15 +182,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "market_rate_chain_id",
-                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_rate_chain_id))}}"
+                  "computedValue": "{{Market_table.sanitizedTableData.map((currentRow) => ( currentRow.market_rate_chain_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "crxhqnbae3",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 58,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "55vr2l1dak",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.market_table}}",
               "isVisible": true,
@@ -185,6 +208,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -198,6 +239,7 @@
               }
             },
             {
+              "boxShadow": "none",
               "widgetName": "MarketFunctions_tab",
               "isCanvas": true,
               "displayName": "Tabs",
@@ -212,10 +254,15 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 3,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -232,22 +279,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "CreateMarket_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Class_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "cz2o82h8y1",
                       "topRow": 1,
                       "bottomRow": 113,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "oiu7n1p81j",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -255,29 +296,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateMarket",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "nwhj460e78",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 1110,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "cz2o82h8y1",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -300,22 +334,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "jcewufp34i",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -334,26 +375,33 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "19n7gty24a",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateMarket_seedSelection.value].seed}}"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_reset",
                               "onClick": "{{\nstoreValue(\"rates_table\", undefined);\t\tstoreValue(\"rates_table_metadata\", undefined);\n}}",
                               "buttonColor": "#03B365",
@@ -378,6 +426,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 44,
                               "isDefaultClickDisabled": true,
                               "widgetId": "bn1cy2xqg3",
@@ -388,9 +437,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_metadata",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -406,25 +457,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Metadata",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "oh3m8x982c",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Metadata:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{\"data\":\"some data\", \"info\":\"other info\"}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_to",
                               "dynamicPropertyPathList": [],
                               "displayName": "TreeSelect",
@@ -444,24 +503,32 @@
                                 }
                               ],
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"Market\",\n    \"value\": \"Market\"    \n  },\n  {\n    \"label\": \"Buyer\",\n    \"value\": \"Buyer\"\n  },\n  {\n    \"label\": \"Account\",\n    \"value\": \"Account\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "6ymvlgq5n4",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "f9ckn36zof",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "expandAll": false,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "onOptionChange": "{{resetWidget(\"CreateRate_rateAccountTo\",true)}}",
                               "allowClear": false
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_rateAccountTo",
                               "dynamicPropertyPathList": [
                                 {
@@ -490,25 +557,32 @@
                                 },
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": "{{CreateRate_to.selectedOptionLabel !== \"Account\"}}",
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "78fa48rcvd",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": "{{CreateRate_to.selectedOptionLabel == \"Account\"}}",
                               "label": "",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_from",
                               "dynamicPropertyPathList": [],
                               "displayName": "TreeSelect",
@@ -528,24 +602,32 @@
                                 }
                               ],
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"Market\",\n    \"value\": \"Market\"    \n  },\n  {\n    \"label\": \"Buyer\",\n    \"value\": \"Buyer\"\n  },\n  {\n    \"label\": \"Account\",\n    \"value\": \"Account\"\n  }\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "6ymvlgq5n4",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "j4fwo7y91z",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "expandAll": false,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "onOptionChange": "{{resetWidget(\"CreateRate_rateAccountFrom\",true)}}",
                               "allowClear": false
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -560,25 +642,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Rate amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "jvtw3g6ql8",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Rate amount:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_marketRateID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -593,26 +683,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Marker rate ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "ssj6ermncz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Marker rate ID:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -622,11 +725,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Create Market",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "oka2aeftzz",
@@ -637,10 +742,12 @@
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_submit",
                               "onClick": "{{market.market_create_response()}}",
                               "buttonColor": "#03B365",
@@ -665,6 +772,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "8mm6j8k11l",
@@ -675,10 +783,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -692,6 +802,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "pxs4zxe3mq",
@@ -702,9 +813,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateMarket_marketID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -719,25 +832,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Market ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "f8dspm14hg",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Market ID:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_rateAction",
                               "displayName": "TreeSelect",
                               "iconSVG": "/static/media/icon.bd99caba.svg",
@@ -752,23 +873,31 @@
                               "parentColumnSpace": 8.2685546875,
                               "dynamicTriggerPathList": [],
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "options": "[\n  {\n    \"label\": \"Transfer\",\n    \"value\": \"Transfer\"    \n  },\n  {\n    \"label\": \"Mint\",\n    \"value\": \"Mint\"\n  },\n  {\n    \"label\": \"Burn\",\n    \"value\": \"Burn\"\n  },\n\t{\n    \"label\": \"HasEqual\",\n    \"value\": \"HasEqual\"\n  },\n\t{\n    \"label\": \"HasLessThan\",\n    \"value\": \"HasLessThan\"\n  },\n\t{\n    \"label\": \"HasLessEqualThan\",\n    \"value\": \"HasLessEqualThan\"\n  },\n\t{\n    \"label\": \"HasGreaterThan\",\n    \"value\": \"HasGreaterThan\"\n  },\n\t{\n    \"label\": \"HasGreaterEqualThan\",\n    \"value\": \"HasGreaterEqualThan\"\n  }\t\n]",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "6ymvlgq5n4",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "6dqli4s5ml",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "expandAll": false,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "allowClear": false
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_rateAccountFrom",
                               "dynamicPropertyPathList": [
                                 {
@@ -797,26 +926,38 @@
                                 },
                                 {
                                   "key": "isVisible"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": "{{CreateRate_from.selectedOptionLabel !== \"Account\"}}",
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "bu089mg1xe",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": "{{CreateRate_from.selectedOptionLabel == \"Account\"}}",
                               "label": "",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 22,
@@ -828,11 +969,13 @@
                               "parentColumnSpace": 8.2685546875,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Rates",
                               "key": "w9t4g2v4y1",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
                               "widgetId": "yp96szrhnq",
@@ -843,9 +986,11 @@
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_submit",
                               "onClick": "{{market.submit_rates()}}",
                               "buttonColor": "#03B365",
@@ -869,6 +1014,7 @@
                               "text": "Submit Rate",
                               "isDisabled": false,
                               "key": "gz8ab8ncfq",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "isDefaultClickDisabled": true,
                               "widgetId": "01p15kvzi0",
@@ -878,10 +1024,12 @@
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Rates_table",
                               "defaultPageSize": 0,
                               "columnOrder": [
@@ -927,6 +1075,9 @@
                                 },
                                 {
                                   "key": "tableData"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "leftColumn": 2,
@@ -938,7 +1089,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -946,7 +1097,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "class_id",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "asset_id": {
                                   "index": 1,
@@ -955,7 +1108,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -963,7 +1116,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "asset_id",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "action": {
                                   "index": 2,
@@ -972,7 +1127,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -980,7 +1135,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "action",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.action))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.action))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "amount": {
                                   "index": 3,
@@ -989,7 +1146,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -997,7 +1154,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "amount",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "from": {
                                   "index": 4,
@@ -1006,7 +1165,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1014,7 +1173,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "from",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.from))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.from))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "to": {
                                   "index": 5,
@@ -1023,7 +1184,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1031,15 +1192,19 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "to",
-                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.to))}}"
+                                  "computedValue": "{{Rates_table.sanitizedTableData.map((currentRow) => ( currentRow.to))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 }
                               },
                               "delimiter": ",",
                               "key": "crxhqnbae3",
                               "derivedColumns": {},
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
-                              "textSize": "PARAGRAPH",
+                              "textSize": "0.875rem",
                               "widgetId": "0b601ro2ch",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": true,
                               "tableData": "{{appsmith.store.rates_table}}",
                               "isVisible": true,
@@ -1053,6 +1218,24 @@
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                }
+                              },
+                              "borderRadius": "0px",
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
@@ -1069,6 +1252,7 @@
                               }
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1087,25 +1271,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "ylqp01kymc",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[CreateRate_classIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_classIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1128,22 +1319,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "tbb87esxjz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1162,25 +1360,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "cu9jfyqya4",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[CreateRate_classIDSelection.value].assets[CreateRate_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateRate_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1203,30 +1408,57 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[CreateRate_classIDSelection.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "jo2tpepumb",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "nwhj460e78",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "nwhj460e78",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "cz2o82h8y1",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "cz2o82h8y1",
+                      "isVisible": true,
+                      "parentId": "oiu7n1p81j",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Create market",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -1235,10 +1467,12 @@
                   "version": 1,
                   "parentId": "2gto2u2hng",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -1255,6 +1489,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "MarketDeposit_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -1272,30 +1507,28 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MarketDeposit",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "mtck7y8b0k",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "vdnlledufq",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1305,11 +1538,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Deposit Assets",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "cvk3cqmsst",
@@ -1320,10 +1555,12 @@
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_submit",
                               "onClick": "{{market_deposit_sf.run(() => showAlert('Assets deposited','success'), () => showAlert('Couldnt deposit the assets','error'))}}",
                               "buttonColor": "#03B365",
@@ -1343,6 +1580,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "fcsy9g3ob2",
@@ -1353,10 +1591,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1370,6 +1610,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "zps1cp9k54",
@@ -1380,9 +1621,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1397,25 +1640,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "ql8nug16q0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1438,22 +1689,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "yuqcf4ti1d",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1472,25 +1730,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "69jj8yqetu",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateMarket_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_rateID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1509,25 +1774,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "lqtzdwpr6w",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Market Rate ID:",
                               "version": 2,
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.markets[MarketDeposit_IDSelection.value].market_rate_chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketDeposit_IDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1550,37 +1822,57 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.markets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "l5l96ia18i",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "mtck7y8b0k",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "mtck7y8b0k",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "vdnlledufq",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "vdnlledufq",
                       "isVisible": true,
                       "parentId": "vdlnp5yd7q",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Deposit Assets",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -1589,10 +1881,12 @@
                   "version": 1,
                   "parentId": "2gto2u2hng",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab04v4lxrpa4",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1608,6 +1902,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "MarketExchange_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -1625,30 +1920,28 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MarketExchange",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "c4wqg2qv2z",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "t8gv0nw4go",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1658,11 +1951,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Exchange Assets",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "7gagwiif97",
@@ -1673,10 +1968,12 @@
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_submit",
                               "onClick": "{{market_exchange_sf.run(() => showAlert('Assets exchanged','success'), () => showAlert('Couldnt exchange the assets','error'))}}",
                               "buttonColor": "#03B365",
@@ -1696,6 +1993,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "46niteo6og",
@@ -1706,10 +2004,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1723,6 +2023,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "9knktf3s2i",
@@ -1733,9 +2034,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1750,25 +2053,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "ss6lypan5j",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1791,22 +2102,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "530qkhkpxh",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1825,25 +2143,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "umykb7ucvz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MarketExchange_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_IDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1866,22 +2191,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.markets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "c6xw1p067x",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MarketExchange_rateID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1900,39 +2232,59 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "h1n155na63",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Market Rate ID:",
                               "version": 2,
                               "parentId": "c4wqg2qv2z",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.markets[MarketExchange_IDSelection.value].market_rate_chain_id}}"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "c4wqg2qv2z",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "t8gv0nw4go",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "t8gv0nw4go",
                       "isVisible": true,
                       "parentId": "41qn9ccbjd",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "glxckpwch9",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Exchange Assets",
                   "rightColumn": 707.9375,
                   "detachFromLayout": true,
@@ -1942,12 +2294,15 @@
                   "version": 1,
                   "parentId": "2gto2u2hng",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "kxstn148ki",
+              "labelTextSize": "0.875rem",
               "rightColumn": 58,
               "widgetId": "2gto2u2hng",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Create market",
               "shouldShowTabs": true,
               "tabsObj": {
@@ -1977,9 +2332,11 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Rates_table_metadata",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -2009,6 +2366,9 @@
                 },
                 {
                   "key": "primaryColumns.info.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 2,
@@ -2020,7 +2380,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -2028,7 +2388,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "data",
-                  "computedValue": "{{Rates_table_metadata.sanitizedTableData.map((currentRow) => ( currentRow.data))}}"
+                  "computedValue": "{{Rates_table_metadata.sanitizedTableData.map((currentRow) => ( currentRow.data))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "info": {
                   "index": 1,
@@ -2037,7 +2399,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -2045,15 +2407,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "info",
-                  "computedValue": "{{Rates_table_metadata.sanitizedTableData.map((currentRow) => ( currentRow.info))}}"
+                  "computedValue": "{{Rates_table_metadata.sanitizedTableData.map((currentRow) => ( currentRow.info))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "crxhqnbae3",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 15,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "tp2lft1d2z",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.rates_table_metadata}}",
               "isVisible": false,
@@ -2067,6 +2433,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -2084,6 +2468,7 @@
             },
             {
               "resetFormOnClick": true,
+              "boxShadow": "none",
               "widgetName": "MarketAll_submit",
               "onClick": "{{market.refresh_markets()}}",
               "buttonColor": "#03B365",
@@ -2104,6 +2489,7 @@
               "dynamicBindingPathList": [],
               "text": "Refresh",
               "key": "1exwuhepck",
+              "labelTextSize": "0.875rem",
               "rightColumn": 17,
               "isDefaultClickDisabled": true,
               "widgetId": "kqdwp6l2lx",
@@ -2114,6 +2500,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": true,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY"
             }
           ]
