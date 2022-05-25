@@ -4010,58 +4010,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "asset_get_accounts",
-              "name": "get_accounts",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "asset_assets.assets_all",
-              "name": "assets.assets_all",
-              "collectionId": "asset_assets",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n\t\tstoreValue(\"assets_table\", undefined);\n\t\tstoreValue(\"assets_table\", get_data.getAssets(get_asset.data.sf_asset));\n\t\treturn appsmith.store.assets_table\n\t}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "asset_assets.assets_class_dropdowns",
-              "name": "assets.assets_class_dropdowns",
-              "collectionId": "asset_assets",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n\t\tstoreValue(\"accounts\", undefined);\n\t\tstoreValue(\"accounts\", get_data.getAccounts(get_accounts.data.sf_account));\n\t\tstoreValue(\"asset_classes\", undefined);\n\t\tstoreValue(\"asset_classes\", get_data.getClasses(get_classes.data.sf_class));\n\t\treturn appsmith.store.accounts;\n\t}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "asset_get_asset",
-              "name": "get_asset",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 100000
-            },
-            {
-              "id": "asset_get_classes",
-              "name": "get_classes",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "widgetNames": [
           "AssetAll_submit",
           "AssetFunctions_tab",
@@ -4160,7 +4109,7 @@
           "TransferAsset_toSelection",
           "asset_balance_output"
         ],
-        "validOnPageLoadActions": true,
+        "validOnPageLoadActions": false,
         "id": "asset",
         "deleted": false,
         "policies": [],
