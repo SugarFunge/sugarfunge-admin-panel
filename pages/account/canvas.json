@@ -19,15 +19,30 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 550,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "AccountFunctions_tab",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab708n46q54n.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab510m8oqsev.isVisible"
+                }
+              ],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 1,
@@ -40,10 +55,30 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab708n46q54n.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab510m8oqsev.isVisible"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -60,22 +95,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "CreateAccount_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "CreateAccount_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "dkp8y62wr8",
                       "topRow": 1,
                       "bottomRow": 26,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "kqoq9xszdc",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -83,29 +112,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateAccount",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "w8apv4qk9b",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "dkp8y62wr8",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAccount_password",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -121,25 +143,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "PASSWORD",
                               "placeholderText": "Account Password",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "3ia6v84hb4",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Account Password",
                               "version": 2,
                               "parentId": "w8apv4qk9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "Enter a password"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAccount_name",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -154,26 +184,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Account Name",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "cj5nbsg720",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Account Name",
                               "version": 2,
                               "parentId": "w8apv4qk9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "Account Name"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateAccount_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -183,11 +226,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Create Account",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "czvso8r6wk",
@@ -198,10 +243,12 @@
                               "parentId": "w8apv4qk9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateAccount_submit",
                               "onClick": "{{accounts.account_create_response()}}",
                               "buttonColor": "#03B365",
@@ -222,6 +269,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "x2p9e75219",
@@ -232,17 +280,39 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "w8apv4qk9b",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "dkp8y62wr8",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "dkp8y62wr8",
+                      "isVisible": true,
+                      "parentId": "kqoq9xszdc",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Create account",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -251,10 +321,12 @@
                   "version": 1,
                   "parentId": "t7vea9upoz",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -271,22 +343,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "FundAccount_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "CreateAccount_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "maotoz0e32",
                       "topRow": 1,
                       "bottomRow": 30,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "54jpy8d0f4",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -294,29 +360,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "uuo4exrq8e",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "maotoz0e32",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -332,25 +391,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "rmjp6js08k",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -373,22 +440,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "doru2r2d4z",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -407,25 +481,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "w23353ncjl",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[FundAccount_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_toSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -448,22 +529,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "uz5i3wbt3f",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -482,26 +570,38 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2qjjxaykp9",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[FundAccount_toSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "FundAccount_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -511,11 +611,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Fund account",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "od9px46n6l",
@@ -526,10 +628,12 @@
                               "parentId": "uuo4exrq8e",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_submit",
                               "onClick": "{{accounts.account_fund_response()}}",
                               "buttonColor": "#03B365",
@@ -550,6 +654,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "n1bco7p8q0",
@@ -560,10 +665,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateAsset_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -578,6 +685,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "5w6fz2cb6o",
@@ -588,17 +696,39 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "uuo4exrq8e",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "maotoz0e32",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "maotoz0e32",
+                      "isVisible": true,
+                      "parentId": "54jpy8d0f4",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Fund account",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -607,10 +737,12 @@
                   "version": 1,
                   "parentId": "t7vea9upoz",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab708n46q54n",
+                  "boxShadow": "none",
                   "widgetName": "Canvas5",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -626,22 +758,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "BalanceAccount_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Collection_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "ku2dkyuixg",
                       "topRow": 1,
                       "bottomRow": 27,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "qmakxl4e4g",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -649,29 +775,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MintAsset",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "3d59mhnt8u",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "ku2dkyuixg",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Account_balance_label",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -684,11 +803,13 @@
                               "parentColumnSpace": 16.5537109375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Balance amount:",
                               "key": "mh74kjbhw5",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 30,
                               "textAlign": "LEFT",
                               "widgetId": "qrym5vzcv5",
@@ -699,9 +820,11 @@
                               "parentId": "3d59mhnt8u",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING3"
+                              "borderRadius": "0px",
+                              "fontSize": "1rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "account_balance_output",
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
@@ -714,6 +837,7 @@
                               "parentColumnSpace": 16.5537109375,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 30,
                               "dynamicBindingPathList": [
                                 {
@@ -723,6 +847,7 @@
                               "truncateButtonColor": "#FFC13D",
                               "text": "{{appsmith.store.account_balance}}",
                               "key": "mh74kjbhw5",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "yirrksgsda",
@@ -733,9 +858,11 @@
                               "parentId": "3d59mhnt8u",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING3"
+                              "borderRadius": "0px",
+                              "fontSize": "1rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAccount_accountIDSelect",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -758,22 +885,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 30,
                               "widgetId": "vegnfe0dpe",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "3d59mhnt8u",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAccount_accountID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -792,26 +926,38 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "qrjmk390b7",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "3d59mhnt8u",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BalanceAccount_accountIDSelect.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BalanceAccount_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -821,11 +967,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Account balance",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "muhnwzne1o",
@@ -836,10 +984,12 @@
                               "parentId": "3d59mhnt8u",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "MintAsset_submit",
                               "onClick": "{{accounts.account_balance_response()}}",
                               "buttonColor": "#03B365",
@@ -859,6 +1009,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "qmykqpcsa5",
@@ -869,16 +1020,38 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "3d59mhnt8u",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "ku2dkyuixg",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "ku2dkyuixg",
+                      "isVisible": true,
+                      "parentId": "qmakxl4e4g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "www30eg4fd",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Account balance",
                   "rightColumn": 783.25,
                   "detachFromLayout": true,
@@ -888,45 +1061,188 @@
                   "version": 1,
                   "parentId": "t7vea9upoz",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tab510m8oqsev",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas6",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 370,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 380,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login', {})}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 21,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "n9y7btfzla",
+                      "rightColumn": 37,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "1t8n0yigdr",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "brnf67r557",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 5,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Go back to login",
+                      "key": "hnklh2ivwp",
+                      "rightColumn": 21,
+                      "textAlign": "LEFT",
+                      "widgetId": "sk0j77j2k9",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "brnf67r557",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    }
+                  ],
+                  "key": "vj88o6z3ee",
+                  "tabName": "Login",
+                  "rightColumn": 843.5,
+                  "detachFromLayout": true,
+                  "widgetId": "brnf67r557",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "t7vea9upoz",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "ptaaj6z2cw",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "widgetId": "t7vea9upoz",
-              "defaultTab": "Create account",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "defaultTab": "{{appsmith.store.jwt?\"Create account\" : \"Login\"}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Create account",
                   "id": "tab1",
                   "widgetId": "kqoq9xszdc",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 0
                 },
                 "tab2": {
                   "label": "Fund account",
                   "id": "tab2",
                   "widgetId": "54jpy8d0f4",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 1
                 },
                 "tab708n46q54n": {
                   "id": "tab708n46q54n",
                   "label": "Account balance",
                   "widgetId": "qmakxl4e4g",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 2
+                },
+                "tab510m8oqsev": {
+                  "id": "tab510m8oqsev",
+                  "index": 3,
+                  "label": "Login",
+                  "widgetId": "brnf67r557",
+                  "isVisible": "{{!appsmith.store.jwt? true : false}}"
                 }
               },
               "isVisible": true,
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Text1",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                },
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 42,
@@ -938,30 +1254,42 @@
               "overflow": "NONE",
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
+              "fontFamily": "System Default",
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "Accounts",
               "key": "fgk1743cjn",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "iov40ynxn2",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
               "resetFormOnClick": true,
+              "boxShadow": "none",
               "widgetName": "AssetAll_submit",
               "onClick": "{{accounts.refresh_accounts()}}",
               "buttonColor": "#03B365",
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "FormButton",
               "iconSVG": "/static/media/icon.c8f649ed.svg",
               "topRow": 46,
@@ -975,22 +1303,29 @@
                 }
               ],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "text": "Refresh",
               "key": "1exwuhepck",
+              "labelTextSize": "0.875rem",
               "rightColumn": 19,
               "isDefaultClickDisabled": true,
               "widgetId": "9g98jubfev",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": true,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -1000,7 +1335,11 @@
                 "seed"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 53,
@@ -1027,6 +1366,12 @@
                 },
                 {
                   "key": "primaryColumns.name.computedValue"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "leftColumn": 4,
@@ -1038,7 +1383,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1046,7 +1391,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_id": {
                   "index": 5,
@@ -1055,7 +1402,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1063,7 +1410,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain id",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "seed": {
                   "index": 3,
@@ -1072,7 +1421,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1080,7 +1429,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "seed",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.seed))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.seed))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "name": {
                   "index": 2,
@@ -1089,7 +1440,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -1097,18 +1448,22 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "name",
-                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "4kug7u1gjf",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "pqz3x5vodp",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.accounts_table}}",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "label": "Data",
               "searchKey": "",
               "enableClientSideSearch": true,
@@ -1119,6 +1474,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -1183,9 +1556,11 @@
           "BalanceAccount_accountIDSelect",
           "BalanceAccount_form",
           "BalanceAccount_title",
+          "Button1",
           "Canvas3",
           "Canvas4",
           "Canvas5",
+          "Canvas6",
           "CreateAccount",
           "CreateAccount_form",
           "CreateAccount_name",
@@ -1207,6 +1582,7 @@
           "MintAsset_submit",
           "Table1",
           "Text1",
+          "Text2",
           "account_balance_output"
         ],
         "validOnPageLoadActions": true,
