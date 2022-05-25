@@ -8,7 +8,8 @@
     "account",
     "currency",
     "escrow",
-    "bundle complete"
+    "bundle complete",
+    "Login"
   ],
   "publishedPageOrder": [
     "bundle",
@@ -17,11 +18,16 @@
     "account",
     "currency",
     "escrow",
-    "bundle complete"
+    "bundle complete",
+    "Login"
   ],
-  "publishedDefaultPageName": "asset",
-  "unpublishedDefaultPageName": "asset",
+  "publishedDefaultPageName": "Login",
+  "unpublishedDefaultPageName": "Login",
   "invisibleActionFields": {
+    "Login_Token": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "account_account_balance_sf": {
       "unpublishedUserSetOnLoad": true,
       "publishedUserSetOnLoad": true
