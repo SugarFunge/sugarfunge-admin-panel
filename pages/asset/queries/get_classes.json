@@ -22,10 +22,6 @@
         {
           "key": "content-type",
           "value": "application/json"
-        },
-        {
-          "key": "x-hasura-admin-secret",
-          "value": "secret"
         }
       ],
       "encodeParamsToggle": true,

@@ -19,14 +19,20 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 550,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "boxShadow": "none",
               "widgetName": "BundleAll_title",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 114,
@@ -38,11 +44,13 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
+              "fontFamily": "System Default",
               "leftColumn": 4,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Bundles",
               "key": "mtp258pcqb",
+              "labelTextSize": "0.875rem",
               "rightColumn": 14,
               "textAlign": "LEFT",
               "widgetId": "yrl0yckpv8",
@@ -53,9 +61,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Bundle_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -96,6 +106,9 @@
                 },
                 {
                   "key": "primaryColumns.metadata.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 4,
@@ -107,7 +120,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -115,7 +128,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain_asset_id",
-                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_asset_id))}}"
+                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_asset_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_bundle_id": {
                   "index": 1,
@@ -124,7 +139,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -132,7 +147,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain_bundle_id",
-                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_bundle_id))}}"
+                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_bundle_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_class_id": {
                   "index": 2,
@@ -141,7 +158,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -149,7 +166,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain_class_id",
-                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_class_id))}}"
+                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_class_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "id": {
                   "index": 3,
@@ -158,7 +177,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -166,7 +185,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "metadata": {
                   "index": 4,
@@ -175,7 +196,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -183,15 +204,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "metadata",
-                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.metadata))}}"
+                  "computedValue": "{{Bundle_table.sanitizedTableData.map((currentRow) => ( currentRow.metadata))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "crxhqnbae3",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "ysonzsjabv",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.bundle_table}}",
               "isVisible": true,
@@ -205,6 +230,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -218,6 +261,7 @@
               }
             },
             {
+              "boxShadow": "none",
               "widgetName": "BundleFunctions_tab",
               "isCanvas": true,
               "displayName": "Tabs",
@@ -232,10 +276,15 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -252,22 +301,16 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "Register_form",
-                      "backgroundColor": "white",
-                      "rightColumn": 63,
                       "isCanvas": true,
                       "displayName": "Class_form",
                       "iconSVG": "/static/media/icon.ea3e08d1.svg",
-                      "widgetId": "ed8de4jrmy",
                       "topRow": 1,
                       "bottomRow": 94,
                       "parentRowSpace": 10,
-                      "isVisible": true,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
-                      "parentId": "guuusd03o5",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
                       "animateLoading": true,
                       "parentColumnSpace": 18.9375,
                       "dynamicTriggerPathList": [],
@@ -275,29 +318,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "Register",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "azsbgnfa9b",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 920,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "ed8de4jrmy",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "Register_classIDSelectio",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -320,22 +356,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 27,
                               "widgetId": "gckd19rg6l",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Register_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -354,25 +397,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 64,
                               "widgetId": "91c70b874v",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[Register_classIDSelectio.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Register_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -395,22 +445,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[Register_classIDSelectio.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 27,
                               "widgetId": "pjn1mplku3",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Register_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -429,25 +486,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 64,
                               "widgetId": "o10gdfz0a7",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[Register_classIDSelectio.value].assets[Register_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Register_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -462,26 +526,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 4,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 27,
                               "widgetId": "7nweyijqyf",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "100"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterSchema_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 28,
@@ -491,11 +568,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 4,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Bundle Schema",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 23,
                               "textAlign": "LEFT",
                               "widgetId": "m02if6ytjm",
@@ -506,10 +585,12 @@
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "RegisterValue_reset",
                               "onClick": "{{\nstoreValue(\"schema_table\", undefined);\n}}",
                               "buttonColor": "#03B365",
@@ -534,6 +615,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 46,
                               "isDefaultClickDisabled": true,
                               "widgetId": "90u8um94xa",
@@ -544,9 +626,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterValue_submit",
                               "onClick": "{{bundle.submit_schema()}}",
                               "buttonColor": "#03B365",
@@ -570,6 +654,7 @@
                               "text": "Submit Value",
                               "isDisabled": false,
                               "key": "gz8ab8ncfq",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "bed5xtxj7v",
@@ -579,10 +664,12 @@
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Schema_table",
                               "defaultPageSize": 0,
                               "columnOrder": [
@@ -616,6 +703,9 @@
                                 },
                                 {
                                   "key": "tableData"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "leftColumn": 9,
@@ -627,7 +717,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -635,7 +725,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "class_id",
-                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
+                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "asset_id": {
                                   "index": 1,
@@ -644,7 +736,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -652,7 +744,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "asset_id",
-                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}"
+                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "amount": {
                                   "index": 3,
@@ -661,7 +755,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -669,15 +763,19 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "amount",
-                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}"
+                                  "computedValue": "{{Schema_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 }
                               },
                               "delimiter": ",",
                               "key": "crxhqnbae3",
                               "derivedColumns": {},
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 54,
-                              "textSize": "PARAGRAPH",
+                              "textSize": "0.875rem",
                               "widgetId": "tqzd2q66vj",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": true,
                               "tableData": "{{appsmith.store.schema_table}}",
                               "isVisible": true,
@@ -691,6 +789,24 @@
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                }
+                              },
+                              "borderRadius": "0px",
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
@@ -707,6 +823,7 @@
                               }
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_metadata",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -722,25 +839,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Bundle Metadata",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 39,
                               "widgetId": "r0xkk58zm6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Bundle Metadata:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{ \"data\": \"somedata\" }"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_chainAssetID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -755,26 +880,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Chain Asset ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 39,
                               "widgetId": "zc288rbmr7",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Asset ID:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 0,
@@ -784,11 +922,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Register Bundle",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 28,
                               "textAlign": "LEFT",
                               "widgetId": "4aohx1xeil",
@@ -799,10 +939,12 @@
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_submit",
                               "onClick": "{{bundle.bundle_create_response()}}",
                               "buttonColor": "#03B365",
@@ -827,6 +969,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 61,
                               "isDefaultClickDisabled": true,
                               "widgetId": "tx8l49zwyl",
@@ -837,10 +980,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -855,6 +1000,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 44,
                               "isDefaultClickDisabled": true,
                               "widgetId": "qf3uakzc31",
@@ -865,9 +1011,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_chainClassID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -882,25 +1030,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Chain Class ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 39,
                               "widgetId": "jrid8zj79c",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Class ID:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1000"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -919,25 +1075,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 55,
                               "widgetId": "h0tm1l9kwz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[RegisterBundle_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterBundle_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -960,30 +1123,57 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "t55jm10r94",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "azsbgnfa9b",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "azsbgnfa9b",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "ed8de4jrmy",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
-                      "key": "v77h8uzhv6"
+                      "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "white",
+                      "rightColumn": 63,
+                      "widgetId": "ed8de4jrmy",
+                      "isVisible": true,
+                      "parentId": "guuusd03o5",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Register bundle",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -992,10 +1182,12 @@
                   "version": 1,
                   "parentId": "6tu33zm6yy",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -1012,6 +1204,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "MintBundle_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -1029,29 +1222,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MintBundle",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "dtevdvwd6y",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "z2vqi4rmq4",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1066,26 +1252,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 39,
                               "widgetId": "ey2j31bfdk",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1095,11 +1294,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Mint Bundle",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 32,
                               "textAlign": "LEFT",
                               "widgetId": "nb9bg9wtou",
@@ -1110,10 +1311,12 @@
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_submit",
                               "onClick": "{{bundle_mint_sf.run(() => showAlert('Bundle minted','success'), () => showAlert('Couldnt mint the bundle','error'))}}",
                               "buttonColor": "#03B365",
@@ -1133,6 +1336,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 55,
                               "isDefaultClickDisabled": true,
                               "widgetId": "ti9uh3np4f",
@@ -1143,10 +1347,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1161,6 +1367,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 38,
                               "isDefaultClickDisabled": true,
                               "widgetId": "y3ew7nbhsd",
@@ -1171,9 +1378,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1192,25 +1401,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "vw94lv2xht",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MintBundle_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1233,22 +1449,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "vv0xk9txe1",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_from",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1267,25 +1490,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "7hddgf7k72",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MintBundle_fromSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_fromSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1308,22 +1538,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "wvoaucqzc6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_to",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1342,25 +1579,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "vi8n2dsjfz",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[MintBundle_toSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_toSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1383,22 +1627,29 @@
                                 },
                                 {
                                   "key": "options"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "ujfo9slbps",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "MintBundle_bundleID",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1421,37 +1672,57 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.bundles}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 48,
                               "widgetId": "m46lx69vy0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "dtevdvwd6y",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "dtevdvwd6y",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "z2vqi4rmq4",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 62,
                       "widgetId": "z2vqi4rmq4",
                       "isVisible": true,
                       "parentId": "ap0asq1kli",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Mint bundle",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -1460,10 +1731,12 @@
                   "version": 1,
                   "parentId": "6tu33zm6yy",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabtdd1a7pflw",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1479,6 +1752,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "BurnBundle_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -1496,29 +1770,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "MintBundleCopy",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "xl2f35x3xa",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "q6ndfz15ks",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1533,26 +1800,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 39,
                               "widgetId": "622i4jbnou",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": ""
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1562,11 +1842,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Burn Bundle",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 32,
                               "textAlign": "LEFT",
                               "widgetId": "b47ryt0pru",
@@ -1577,10 +1859,12 @@
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_submit",
                               "onClick": "{{bundle_burn_sf.run(() => showAlert('Bundle Burned','success'), () => showAlert('Couldnt burn the bundle','error'))}}",
                               "buttonColor": "#03B365",
@@ -1600,6 +1884,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 55,
                               "isDefaultClickDisabled": true,
                               "widgetId": "v6ho5q612o",
@@ -1610,10 +1895,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1628,6 +1915,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 38,
                               "isDefaultClickDisabled": true,
                               "widgetId": "492nuwnf1f",
@@ -1638,9 +1926,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1659,25 +1949,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "oq73mu52dp",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BurnBundle_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1700,22 +1997,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "8v1rrsbo94",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_from",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1734,25 +2038,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "5g2dlstok9",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BurnBundle_fromSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_fromSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1775,22 +2086,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "b7phldgf8q",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_to",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1809,25 +2127,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "4vpi134y96",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[BurnBundle_toSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_toSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1850,22 +2175,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 25,
                               "widgetId": "e7a6dyj48j",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "BurnBundle_bundleID",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1888,36 +2220,56 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.bundles}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 48,
                               "widgetId": "pmlgsnfet1",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "xl2f35x3xa",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "xl2f35x3xa",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "q6ndfz15ks",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 62,
                       "widgetId": "q6ndfz15ks",
                       "isVisible": true,
                       "parentId": "swujz2i8at",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Burn bundle",
                   "rightColumn": 707.9375,
                   "detachFromLayout": true,
@@ -1927,12 +2279,15 @@
                   "version": 1,
                   "parentId": "6tu33zm6yy",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "kxstn148ki",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "widgetId": "6tu33zm6yy",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Register bundle",
               "shouldShowTabs": true,
               "tabsObj": {
@@ -1962,10 +2317,12 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             },
             {
               "resetFormOnClick": true,
+              "boxShadow": "none",
               "widgetName": "BundleAll_submit",
               "onClick": "{{bundle.refresh_bundles()}}",
               "buttonColor": "#03B365",
@@ -1986,6 +2343,7 @@
               "dynamicBindingPathList": [],
               "text": "Refresh",
               "key": "1exwuhepck",
+              "labelTextSize": "0.875rem",
               "rightColumn": 27,
               "isDefaultClickDisabled": true,
               "widgetId": "kc77n3was7",
@@ -1996,6 +2354,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": true,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY"
             }
           ]
