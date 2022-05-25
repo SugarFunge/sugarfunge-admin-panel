@@ -3,6 +3,7 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#F1DEFF",
+  "icon": "open-new-tab",
   "unpublishedAppLayout": {
     "type": "FLUID"
   },
