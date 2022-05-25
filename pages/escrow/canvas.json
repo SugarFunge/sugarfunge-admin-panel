@@ -31,7 +31,11 @@
               "widgetName": "EscrowsAll_submit",
               "onClick": "{{escrows.refresh_escrows()}}",
               "buttonColor": "#03B365",
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "FormButton",
               "iconSVG": "/static/media/icon.c8f649ed.svg",
               "topRow": 102,
@@ -45,14 +49,18 @@
                 }
               ],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "text": "Refresh",
               "key": "1exwuhepck",
               "labelTextSize": "0.875rem",
               "rightColumn": 18,
               "isDefaultClickDisabled": true,
               "widgetId": "r7o66s1fgp",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
@@ -68,6 +76,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "fontSize"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "displayName": "Text",
@@ -81,7 +92,11 @@
               "overflow": "NONE",
               "fontFamily": "System Default",
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "truncateButtonColor": "#FFC13D",
               "text": "Escrows",
               "key": "xwqimd6pqe",
@@ -89,7 +104,7 @@
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "q2il8f9fbg",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "version": 1,
@@ -111,7 +126,11 @@
                 "escrow_class"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 109,
@@ -145,6 +164,9 @@
                 },
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "leftColumn": 4,
@@ -255,7 +277,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.escrow_table}}",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "label": "Data",
               "searchKey": "",
               "enableClientSideSearch": true,
@@ -305,6 +327,23 @@
               "boxShadow": "none",
               "widgetName": "EscrowFunctions_tab",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tabsObj.tabmjh1zbwmn1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabpziyswoxyg.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabtdd1a7pflw.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                }
+              ],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 6,
@@ -320,6 +359,24 @@
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "tabsObj.tabmjh1zbwmn1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabpziyswoxyg.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabtdd1a7pflw.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab1.isVisible"
                 }
               ],
               "children": [
@@ -2680,6 +2737,129 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tabmjh1zbwmn1",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas5",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 880,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 890,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 14,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 17,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Go back to login",
+                      "key": "hnklh2ivwp",
+                      "rightColumn": 33,
+                      "textAlign": "LEFT",
+                      "widgetId": "9telb8m3ii",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "50q7su11mk",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login', {})}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 14,
+                      "bottomRow": 18,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 33,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "n9y7btfzla",
+                      "rightColumn": 49,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "xy3iouwtk8",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "50q7su11mk",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "key": "vj88o6z3ee",
+                  "tabName": "Login",
+                  "rightColumn": 843.5,
+                  "detachFromLayout": true,
+                  "widgetId": "50q7su11mk",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "x196jipln3",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "kxstn148ki",
@@ -2687,28 +2867,28 @@
               "rightColumn": 60,
               "widgetId": "x196jipln3",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Register escrow",
+              "defaultTab": "{{appsmith.store.jwt?\"Register escrow\" : \"Login\"}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Register escrow",
                   "id": "tab1",
                   "widgetId": "99zazqrry0",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 0
                 },
                 "tab2": {
                   "label": "Create escrow",
                   "id": "tab2",
                   "widgetId": "m4ui650sab",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 1
                 },
                 "tabtdd1a7pflw": {
                   "id": "tabtdd1a7pflw",
                   "label": "Deposit escrow",
                   "widgetId": "7fssefh3r8",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 1
                 },
                 "tabpziyswoxyg": {
@@ -2716,7 +2896,14 @@
                   "index": 3,
                   "label": "Sweep escrow",
                   "widgetId": "86qlkeme01",
-                  "isVisible": true
+                  "isVisible": "{{appsmith.store.jwt? true : false}}"
+                },
+                "tabmjh1zbwmn1": {
+                  "id": "tabmjh1zbwmn1",
+                  "index": 4,
+                  "label": "Login",
+                  "widgetId": "50q7su11mk",
+                  "isVisible": "{{!appsmith.store.jwt? true : false}}"
                 }
               },
               "isVisible": true,
@@ -2762,10 +2949,12 @@
           ]
         ],
         "widgetNames": [
+          "Button1",
           "Canvas1",
           "Canvas2",
           "Canvas3",
           "Canvas4",
+          "Canvas5",
           "CreateEscrow",
           "CreateEscrow_ID",
           "CreateEscrow_classIDSelect",
@@ -2821,7 +3010,8 @@
           "SweepEscrow_submit",
           "SweepEscrow_title",
           "SweepEscrow_to",
-          "SweepEscrow_toSelection"
+          "SweepEscrow_toSelection",
+          "Text2"
         ],
         "validOnPageLoadActions": true,
         "id": "escrow",
@@ -2832,7 +3022,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

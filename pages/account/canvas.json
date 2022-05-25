@@ -29,6 +29,20 @@
               "boxShadow": "none",
               "widgetName": "AccountFunctions_tab",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab708n46q54n.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab510m8oqsev.isVisible"
+                }
+              ],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 1,
@@ -44,6 +58,21 @@
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab708n46q54n.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab510m8oqsev.isVisible"
                 }
               ],
               "children": [
@@ -1034,6 +1063,129 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tab510m8oqsev",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas6",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 370,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 380,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login', {})}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 21,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "n9y7btfzla",
+                      "rightColumn": 37,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "1t8n0yigdr",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "brnf67r557",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    },
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 10,
+                      "bottomRow": 14,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 5,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Go back to login",
+                      "key": "hnklh2ivwp",
+                      "rightColumn": 21,
+                      "textAlign": "LEFT",
+                      "widgetId": "sk0j77j2k9",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "brnf67r557",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    }
+                  ],
+                  "key": "vj88o6z3ee",
+                  "tabName": "Login",
+                  "rightColumn": 843.5,
+                  "detachFromLayout": true,
+                  "widgetId": "brnf67r557",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "t7vea9upoz",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "ptaaj6z2cw",
@@ -1041,29 +1193,36 @@
               "rightColumn": 60,
               "widgetId": "t7vea9upoz",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Create account",
+              "defaultTab": "{{appsmith.store.jwt?\"Create account\" : \"Login\"}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Create account",
                   "id": "tab1",
                   "widgetId": "kqoq9xszdc",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 0
                 },
                 "tab2": {
                   "label": "Fund account",
                   "id": "tab2",
                   "widgetId": "54jpy8d0f4",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 1
                 },
                 "tab708n46q54n": {
                   "id": "tab708n46q54n",
                   "label": "Account balance",
                   "widgetId": "qmakxl4e4g",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 2
+                },
+                "tab510m8oqsev": {
+                  "id": "tab510m8oqsev",
+                  "index": 3,
+                  "label": "Login",
+                  "widgetId": "brnf67r557",
+                  "isVisible": "{{!appsmith.store.jwt? true : false}}"
                 }
               },
               "isVisible": true,
@@ -1079,6 +1238,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "fontSize"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "displayName": "Text",
@@ -1094,7 +1256,11 @@
               "dynamicTriggerPathList": [],
               "fontFamily": "System Default",
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "shouldTruncate": false,
               "truncateButtonColor": "#FFC13D",
               "text": "Accounts",
@@ -1103,7 +1269,7 @@
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "iov40ynxn2",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "version": 1,
@@ -1119,7 +1285,11 @@
               "widgetName": "AssetAll_submit",
               "onClick": "{{accounts.refresh_accounts()}}",
               "buttonColor": "#03B365",
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "FormButton",
               "iconSVG": "/static/media/icon.c8f649ed.svg",
               "topRow": 46,
@@ -1133,14 +1303,18 @@
                 }
               ],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "text": "Refresh",
               "key": "1exwuhepck",
               "labelTextSize": "0.875rem",
               "rightColumn": 19,
               "isDefaultClickDisabled": true,
               "widgetId": "9g98jubfev",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
@@ -1161,7 +1335,11 @@
                 "seed"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 53,
@@ -1191,6 +1369,9 @@
                 },
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "leftColumn": 4,
@@ -1282,7 +1463,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.accounts_table}}",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "label": "Data",
               "searchKey": "",
               "enableClientSideSearch": true,
@@ -1375,9 +1556,11 @@
           "BalanceAccount_accountIDSelect",
           "BalanceAccount_form",
           "BalanceAccount_title",
+          "Button1",
           "Canvas3",
           "Canvas4",
           "Canvas5",
+          "Canvas6",
           "CreateAccount",
           "CreateAccount_form",
           "CreateAccount_name",
@@ -1399,6 +1582,7 @@
           "MintAsset_submit",
           "Table1",
           "Text1",
+          "Text2",
           "account_balance_output"
         ],
         "validOnPageLoadActions": true,
@@ -1410,7 +1594,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

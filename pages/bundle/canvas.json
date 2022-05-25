@@ -31,6 +31,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "fontSize"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "displayName": "Text",
@@ -46,7 +49,11 @@
               "overflow": "NONE",
               "fontFamily": "System Default",
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "truncateButtonColor": "#FFC13D",
               "text": "Bundles",
               "key": "mtp258pcqb",
@@ -54,7 +61,7 @@
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "yrl0yckpv8",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "fontStyle": "BOLD",
               "textColor": "#231F20",
               "version": 1,
@@ -76,7 +83,11 @@
                 "metadata"
               ],
               "isVisibleDownload": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Table",
               "iconSVG": "/static/media/icon.db8a9cbd.svg",
               "topRow": 115,
@@ -109,6 +120,9 @@
                 },
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "isVisible"
                 }
               ],
               "leftColumn": 4,
@@ -219,7 +233,7 @@
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.bundle_table}}",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "label": "Data",
               "searchKey": "",
               "enableClientSideSearch": true,
@@ -264,6 +278,17 @@
               "boxShadow": "none",
               "widgetName": "BundleFunctions_tab",
               "isCanvas": true,
+              "dynamicPropertyPathList": [
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabqwisaa34vm.isVisible"
+                }
+              ],
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653.svg",
               "topRow": 2,
@@ -279,6 +304,18 @@
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "defaultTab"
+                },
+                {
+                  "key": "tabsObj.tab1.isVisible"
+                },
+                {
+                  "key": "tabsObj.tab2.isVisible"
+                },
+                {
+                  "key": "tabsObj.tabqwisaa34vm.isVisible"
                 }
               ],
               "children": [
@@ -1733,6 +1770,129 @@
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "0px"
+                },
+                {
+                  "tabId": "tabqwisaa34vm",
+                  "boxShadow": "none",
+                  "widgetName": "Canvas3",
+                  "displayName": "Canvas",
+                  "topRow": 1,
+                  "bottomRow": 980,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 990,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [
+                    {
+                      "key": "borderRadius"
+                    },
+                    {
+                      "key": "accentColor"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "widgetName": "Text2",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 16,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Go back to login",
+                      "key": "hnklh2ivwp",
+                      "rightColumn": 32,
+                      "textAlign": "LEFT",
+                      "widgetId": "58e7sdzm71",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "dti91swt5g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Login', {})}}",
+                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "displayName": "Button",
+                      "iconSVG": "/static/media/icon.cca02633.svg",
+                      "topRow": 9,
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "type": "BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.8671875,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 32,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "buttonColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "text": "Login",
+                      "isDisabled": false,
+                      "key": "n9y7btfzla",
+                      "rightColumn": 48,
+                      "isDefaultClickDisabled": true,
+                      "widgetId": "14dpjersx5",
+                      "isVisible": true,
+                      "recaptchaType": "V3",
+                      "version": 1,
+                      "parentId": "dti91swt5g",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "buttonVariant": "PRIMARY",
+                      "placement": "CENTER"
+                    }
+                  ],
+                  "key": "vj88o6z3ee",
+                  "tabName": "Login",
+                  "rightColumn": 843.5,
+                  "detachFromLayout": true,
+                  "widgetId": "dti91swt5g",
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "6tu33zm6yy",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                 }
               ],
               "key": "kxstn148ki",
@@ -1740,22 +1900,29 @@
               "rightColumn": 60,
               "widgetId": "6tu33zm6yy",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "defaultTab": "Register bundle",
+              "defaultTab": "{{appsmith.store.jwt?\"Register bundle\" : \"Login\"}}",
               "shouldShowTabs": true,
               "tabsObj": {
                 "tab1": {
                   "label": "Register bundle",
                   "id": "tab1",
                   "widgetId": "guuusd03o5",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 0
                 },
                 "tab2": {
                   "label": "Mint bundle",
                   "id": "tab2",
                   "widgetId": "ap0asq1kli",
-                  "isVisible": true,
+                  "isVisible": "{{appsmith.store.jwt? true : false}}",
                   "index": 1
+                },
+                "tabqwisaa34vm": {
+                  "id": "tabqwisaa34vm",
+                  "index": 2,
+                  "label": "Login",
+                  "widgetId": "dti91swt5g",
+                  "isVisible": "{{!appsmith.store.jwt? true : false}}"
                 }
               },
               "isVisible": true,
@@ -1771,7 +1938,11 @@
               "widgetName": "BundleAll_submit",
               "onClick": "{{bundle.refresh_bundles()}}",
               "buttonColor": "#03B365",
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "FormButton",
               "iconSVG": "/static/media/icon.c8f649ed.svg",
               "topRow": 108,
@@ -1785,14 +1956,18 @@
                 }
               ],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "text": "Refresh",
               "key": "1exwuhepck",
               "labelTextSize": "0.875rem",
               "rightColumn": 17,
               "isDefaultClickDisabled": true,
               "widgetId": "kc77n3was7",
-              "isVisible": true,
+              "isVisible": "{{appsmith.store.jwt? true : false}}",
               "recaptchaType": "V3",
               "version": 1,
               "parentId": "0",
@@ -1834,8 +2009,10 @@
           "BundleAll_title",
           "BundleFunctions_tab",
           "Bundle_table",
+          "Button1",
           "Canvas1",
           "Canvas2",
+          "Canvas3",
           "MainContainer",
           "MintBundle",
           "MintBundle_amount",
@@ -1868,7 +2045,8 @@
           "Register_classID",
           "Register_classIDSelectio",
           "Register_form",
-          "Schema_table"
+          "Schema_table",
+          "Text2"
         ],
         "validOnPageLoadActions": true,
         "id": "bundle",
@@ -1879,7 +2057,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "policies": [],

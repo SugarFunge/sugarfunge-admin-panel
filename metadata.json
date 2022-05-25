@@ -9,8 +9,7 @@
     "currency",
     "escrow",
     "bundle complete",
-    "Login",
-    "Main"
+    "Login"
   ],
   "publishedPageOrder": [
     "bundle",
@@ -20,8 +19,7 @@
     "currency",
     "escrow",
     "bundle complete",
-    "Login",
-    "Main"
+    "Login"
   ],
   "publishedDefaultPageName": "Login",
   "unpublishedDefaultPageName": "Login",
