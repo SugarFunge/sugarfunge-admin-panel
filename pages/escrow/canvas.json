@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 57,
+          "version": 58,
           "minHeight": 620,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -27,6 +27,7 @@
           "children": [
             {
               "resetFormOnClick": true,
+              "boxShadow": "none",
               "widgetName": "EscrowsAll_submit",
               "onClick": "{{escrows.refresh_escrows()}}",
               "buttonColor": "#03B365",
@@ -47,6 +48,7 @@
               "dynamicBindingPathList": [],
               "text": "Refresh",
               "key": "1exwuhepck",
+              "labelTextSize": "0.875rem",
               "rightColumn": 18,
               "isDefaultClickDisabled": true,
               "widgetId": "r7o66s1fgp",
@@ -57,10 +59,17 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "disabledWhenInvalid": true,
+              "borderRadius": "0px",
               "buttonVariant": "PRIMARY"
             },
             {
+              "boxShadow": "none",
               "widgetName": "EscrowTable_title",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "fontSize"
+                }
+              ],
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b52.svg",
               "topRow": 98,
@@ -70,11 +79,13 @@
               "animateLoading": true,
               "dynamicTriggerPathList": [],
               "overflow": "NONE",
+              "fontFamily": "System Default",
               "leftColumn": 4,
               "dynamicBindingPathList": [],
               "truncateButtonColor": "#FFC13D",
               "text": "Escrows",
               "key": "xwqimd6pqe",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "textAlign": "LEFT",
               "widgetId": "q2il8f9fbg",
@@ -85,9 +96,11 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "fontSize": "HEADING1"
+              "borderRadius": "0px",
+              "fontSize": "1.5rem"
             },
             {
+              "boxShadow": "none",
               "widgetName": "Escrows_table",
               "defaultPageSize": 0,
               "columnOrder": [
@@ -129,6 +142,9 @@
                 },
                 {
                   "key": "primaryColumns.escrow_class.computedValue"
+                },
+                {
+                  "key": "accentColor"
                 }
               ],
               "leftColumn": 4,
@@ -140,7 +156,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -148,7 +164,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "id",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "escrow_shares": {
                   "index": 3,
@@ -157,7 +175,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -165,7 +183,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "escrow_shares",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.escrow_shares))}}"
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.escrow_shares))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "chain_id": {
                   "index": 4,
@@ -174,7 +194,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -182,7 +202,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "chain_id",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}"
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.chain_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "asset_id": {
                   "index": 2,
@@ -191,7 +213,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -199,7 +221,9 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "asset_id",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}"
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 },
                 "escrow_class": {
                   "index": 4,
@@ -208,7 +232,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textSize": "PARAGRAPH",
+                  "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -216,15 +240,19 @@
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "escrow_class",
-                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.escrow_class))}}"
+                  "computedValue": "{{Escrows_table.sanitizedTableData.map((currentRow) => ( currentRow.escrow_class))}}",
+                  "borderRadius": "0px",
+                  "boxShadow": "none"
                 }
               },
               "delimiter": ",",
               "key": "crxhqnbae3",
               "derivedColumns": {},
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
-              "textSize": "PARAGRAPH",
+              "textSize": "0.875rem",
               "widgetId": "9g6y0lkcm5",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "tableData": "{{appsmith.store.escrow_table}}",
               "isVisible": true,
@@ -238,6 +266,24 @@
               "isLoading": false,
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "0px",
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER",
               "columnSizeMap": {
@@ -256,6 +302,7 @@
               }
             },
             {
+              "boxShadow": "none",
               "widgetName": "EscrowFunctions_tab",
               "isCanvas": true,
               "displayName": "Tabs",
@@ -270,10 +317,15 @@
               "parentColumnSpace": 15.0625,
               "dynamicTriggerPathList": [],
               "leftColumn": 4,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
               "children": [
                 {
                   "tabId": "tab1",
+                  "boxShadow": "none",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -290,6 +342,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "RegisterEscrow_form",
                       "isCanvas": true,
                       "displayName": "Class_form",
@@ -307,29 +360,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "RegisterEscrow",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "a3j4yb15oo",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "7di642rl85",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_metadata",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -345,26 +391,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "placeholderText": "Escrow Metadata",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "cqluf7d0qk",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Escrow Metadata:",
                               "version": 2,
                               "parentId": "a3j4yb15oo",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{ \"data\": \"somedata\" }"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -374,11 +433,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Register Escrow",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "jl83o5n662",
@@ -389,9 +450,11 @@
                               "parentId": "a3j4yb15oo",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_chainClassID",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -406,25 +469,33 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Chain Class ID",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "w4pyolqjy6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Class ID:",
                               "version": 2,
                               "parentId": "a3j4yb15oo",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1000"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -443,25 +514,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "2kdhzrixwc",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "a3j4yb15oo",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[RegisterEscrow_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -484,23 +562,30 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "sgz8s6swg7",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "a3j4yb15oo",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "RegisterEscrow_submit",
                               "onClick": "{{escrows.escrow_register_response()}}",
                               "buttonColor": "#03B365",
@@ -525,6 +610,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "0g5tkk4obj",
@@ -535,24 +621,39 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "a3j4yb15oo",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "7di642rl85",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "7di642rl85",
                       "isVisible": true,
                       "parentId": "99zazqrry0",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Register escrow",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -561,10 +662,12 @@
                   "version": 1,
                   "parentId": "x196jipln3",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tab2",
+                  "boxShadow": "none",
                   "widgetName": "Canvas2",
                   "displayName": "Canvas",
                   "topRow": 0,
@@ -581,6 +684,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "CreateEscrow_form",
                       "isCanvas": true,
                       "displayName": "Class_form",
@@ -598,29 +702,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "CreateEscrow",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "o53y9roxul",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 750,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "aejcnaus8q",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_ID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -639,25 +736,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "h06qtzgoye",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "ID:",
                               "version": 2,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.escrows_classes[CreateEscrow_classIDSelect.value].id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_classIDSelect",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -680,22 +784,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.escrows_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "9homaf5yy8",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_ownerSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -718,22 +829,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "v3htzvvy92",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_owner",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -752,26 +870,38 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "2cmpw6h8te",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain Acount ID:",
                               "version": 2,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateEscrow_ownerSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_owner_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 17,
@@ -781,11 +911,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Owners",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
                               "widgetId": "02loboc105",
@@ -796,10 +928,12 @@
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_resetValue",
                               "onClick": "{{\nstoreValue(\"owners_table\", undefined);\n}}",
                               "buttonColor": "#03B365",
@@ -824,6 +958,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 44,
                               "isDefaultClickDisabled": true,
                               "widgetId": "n7t4l1nwjj",
@@ -834,9 +969,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_submitValue",
                               "onClick": "{{escrows.submit_owner()}}",
                               "buttonColor": "#03B365",
@@ -860,6 +997,7 @@
                               "text": "Submit Value",
                               "isDisabled": false,
                               "key": "gz8ab8ncfq",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "isDefaultClickDisabled": true,
                               "widgetId": "ceov2a2l76",
@@ -869,10 +1007,12 @@
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "Owners_table",
                               "defaultPageSize": 0,
                               "columnOrder": [
@@ -906,6 +1046,9 @@
                                 },
                                 {
                                   "key": "primaryColumns.id.computedValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "leftColumn": 2,
@@ -917,7 +1060,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -925,7 +1068,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "owner",
-                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.owner))}}"
+                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.owner))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "share": {
                                   "index": 1,
@@ -934,7 +1079,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -942,7 +1087,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "share",
-                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.share))}}"
+                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.share))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "id": {
                                   "index": 2,
@@ -951,7 +1098,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -959,15 +1106,19 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "id",
-                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}"
+                                  "computedValue": "{{Owners_table.sanitizedTableData.map((currentRow) => ( currentRow.id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 }
                               },
                               "delimiter": ",",
                               "key": "crxhqnbae3",
                               "derivedColumns": {},
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
-                              "textSize": "PARAGRAPH",
+                              "textSize": "0.875rem",
                               "widgetId": "3uinloj6v1",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": true,
                               "tableData": "{{appsmith.store.owners_table}}",
                               "isVisible": true,
@@ -981,6 +1132,24 @@
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                }
+                              },
+                              "borderRadius": "0px",
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
@@ -999,7 +1168,13 @@
                               }
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1009,11 +1184,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Create Escrow",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "iu271pljgx",
@@ -1024,10 +1201,12 @@
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_submit",
                               "onClick": "{{escrows.escrow_create_response()}}",
                               "buttonColor": "#03B365",
@@ -1048,6 +1227,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "oo57suhy20",
@@ -1058,10 +1238,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1076,6 +1258,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "zeqvzv42ch",
@@ -1086,9 +1269,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1107,25 +1292,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "l9f84k2i1x",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[CreateEscrow_seedSelect.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_seedSelect",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1148,22 +1340,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "1zkgjhh7kh",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "CreateEscrow_share",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1178,40 +1377,61 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "lrgv338fol",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Share:",
                               "version": 2,
                               "parentId": "o53y9roxul",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "1"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "o53y9roxul",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "aejcnaus8q",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "aejcnaus8q",
                       "isVisible": true,
                       "parentId": "m4ui650sab",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "isDisabled": false,
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Create escrow",
                   "rightColumn": 361.5,
                   "detachFromLayout": true,
@@ -1220,10 +1440,12 @@
                   "version": 1,
                   "parentId": "x196jipln3",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabtdd1a7pflw",
+                  "boxShadow": "none",
                   "widgetName": "Canvas3",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1239,6 +1461,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "DepositEscrow_form",
                       "isCanvas": true,
                       "displayName": "Class_form",
@@ -1256,29 +1479,22 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "DepositEscrow",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "me1ww9hoed",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 810,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "66ei1as6xp",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_escrowSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1301,22 +1517,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.escrows}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "80dal8q5ua",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_classIDSelect",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1339,22 +1562,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "nx6jnwksbv",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_classID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1373,25 +1603,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "r3wzb47fto",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[DepositEscrow_classIDSelect.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_assetIDSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1414,22 +1651,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.asset_classes[DepositEscrow_classIDSelect.value].assets}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "v8kei3t9si",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_assetID",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1448,25 +1692,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "lvoo148n46",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.asset_classes[DepositEscrow_classIDSelect.value].assets[DepositEscrow_assetIDSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_amount",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595.svg",
@@ -1481,26 +1732,39 @@
                               "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [],
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                }
+                              ],
                               "labelStyle": "",
                               "inputType": "NUMBER",
                               "placeholderText": "Amount",
                               "isDisabled": false,
                               "key": "muzk6jsbut",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 62,
                               "widgetId": "r9oyvmiyf0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Amount:",
                               "version": 2,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "100"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_assets_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 17,
@@ -1510,11 +1774,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 2,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Assets",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "textAlign": "LEFT",
                               "widgetId": "cyznh6q64h",
@@ -1525,10 +1791,12 @@
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_resetValue",
                               "onClick": "{{\nstoreValue(\"schema_table\", undefined);\t\tstoreValue(\"schema_table\", undefined);\n}}",
                               "buttonColor": "#03B365",
@@ -1553,6 +1821,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 44,
                               "isDefaultClickDisabled": true,
                               "widgetId": "k36c6t5qjb",
@@ -1563,9 +1832,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_submitValue",
                               "onClick": "{{escrows.submit_assets()}}",
                               "buttonColor": "#03B365",
@@ -1589,6 +1860,7 @@
                               "text": "Submit Value",
                               "isDisabled": false,
                               "key": "gz8ab8ncfq",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
                               "isDefaultClickDisabled": true,
                               "widgetId": "m49lu7xwg4",
@@ -1598,10 +1870,12 @@
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_table",
                               "defaultPageSize": 0,
                               "columnOrder": [
@@ -1635,6 +1909,9 @@
                                 },
                                 {
                                   "key": "tableData"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "leftColumn": 2,
@@ -1646,7 +1923,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1654,7 +1931,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "class_id",
-                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}"
+                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.class_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "asset_id": {
                                   "index": 1,
@@ -1663,7 +1942,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1671,7 +1950,9 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "asset_id",
-                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}"
+                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.asset_id))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 },
                                 "amount": {
                                   "index": 3,
@@ -1680,7 +1961,7 @@
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
-                                  "textSize": "PARAGRAPH",
+                                  "textSize": "0.875rem",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1688,15 +1969,19 @@
                                   "isCellVisible": true,
                                   "isDerived": false,
                                   "label": "amount",
-                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}"
+                                  "computedValue": "{{DepositEscrow_table.sanitizedTableData.map((currentRow) => ( currentRow.amount))}}",
+                                  "borderRadius": "0px",
+                                  "boxShadow": "none"
                                 }
                               },
                               "delimiter": ",",
                               "key": "crxhqnbae3",
                               "derivedColumns": {},
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 62,
-                              "textSize": "PARAGRAPH",
+                              "textSize": "0.875rem",
                               "widgetId": "dihg7so8ym",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisibleFilters": true,
                               "tableData": "{{appsmith.store.deposit_table}}",
                               "isVisible": true,
@@ -1710,6 +1995,24 @@
                               "isLoading": false,
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
+                              "childStylesheet": {
+                                "button": {
+                                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "menuButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                },
+                                "iconButton": {
+                                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                                  "boxShadow": "none"
+                                }
+                              },
+                              "borderRadius": "0px",
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER",
                               "columnSizeMap": {
@@ -1726,7 +2029,13 @@
                               }
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1736,11 +2045,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Deposit Escrow",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "pir1340ofh",
@@ -1751,10 +2062,12 @@
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_submit",
                               "onClick": "{{escrow_deposit_sf.run(() => showAlert('Assets Deposited','success'), () => showAlert('Bad Request','error'))}}",
                               "buttonColor": "#03B365",
@@ -1775,6 +2088,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "b95enm0e7z",
@@ -1785,10 +2099,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -1803,6 +2119,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "wxjgk3gv9e",
@@ -1813,9 +2130,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -1834,25 +2153,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "3lpgudw18s",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[DepositEscrow_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "DepositEscrow_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1875,36 +2201,56 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "twtqxavcxi",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "me1ww9hoed",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "me1ww9hoed",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "66ei1as6xp",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "66ei1as6xp",
                       "isVisible": true,
                       "parentId": "7fssefh3r8",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "yq5y4b54t6",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Deposit escrow",
                   "rightColumn": 707.9375,
                   "detachFromLayout": true,
@@ -1914,10 +2260,12 @@
                   "version": 1,
                   "parentId": "x196jipln3",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 },
                 {
                   "tabId": "tabpziyswoxyg",
+                  "boxShadow": "none",
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 1,
@@ -1933,6 +2281,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
+                      "boxShadow": "none",
                       "widgetName": "SweepEscrow_form",
                       "isCanvas": true,
                       "displayName": "Collection_form",
@@ -1950,30 +2299,28 @@
                       "dynamicBindingPathList": [],
                       "children": [
                         {
+                          "boxShadow": "none",
                           "widgetName": "SweepEscrow",
-                          "rightColumn": 454.5,
-                          "detachFromLayout": true,
                           "displayName": "Canvas",
-                          "widgetId": "7jeq0yf2f6",
-                          "containerStyle": "none",
                           "topRow": 0,
                           "bottomRow": 390,
                           "parentRowSpace": 1,
-                          "isVisible": true,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
-                          "version": 1,
                           "hideCard": true,
-                          "parentId": "08qlgr476d",
                           "minHeight": 400,
-                          "renderMode": "CANVAS",
-                          "isLoading": false,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
                           "dynamicBindingPathList": [],
                           "children": [
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_title",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "fontSize"
+                                }
+                              ],
                               "displayName": "Text",
                               "iconSVG": "/static/media/icon.97c59b52.svg",
                               "topRow": 1,
@@ -1983,11 +2330,13 @@
                               "animateLoading": true,
                               "dynamicTriggerPathList": [],
                               "overflow": "NONE",
+                              "fontFamily": "System Default",
                               "leftColumn": 1,
                               "dynamicBindingPathList": [],
                               "truncateButtonColor": "#FFC13D",
                               "text": "Sweep Escrow",
                               "key": "xwqimd6pqe",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "textAlign": "LEFT",
                               "widgetId": "gt0p3pn9cb",
@@ -1998,10 +2347,12 @@
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
                               "isLoading": false,
-                              "fontSize": "HEADING1"
+                              "borderRadius": "0px",
+                              "fontSize": "1.5rem"
                             },
                             {
                               "resetFormOnClick": false,
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_submit",
                               "onClick": "{{escrow_sweep_sf.run(() => showAlert('Sweep Successfully','success'), () => showAlert('Bad Request','error'))}}",
                               "buttonColor": "#03B365",
@@ -2021,6 +2372,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Submit",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 63,
                               "isDefaultClickDisabled": true,
                               "widgetId": "do6a966wx4",
@@ -2031,10 +2383,12 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": true,
+                              "borderRadius": "0px",
                               "buttonVariant": "PRIMARY"
                             },
                             {
                               "resetFormOnClick": true,
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_reset",
                               "buttonColor": "#03B365",
                               "displayName": "FormButton",
@@ -2049,6 +2403,7 @@
                               "dynamicBindingPathList": [],
                               "text": "Reset",
                               "key": "5kxzu56u4q",
+                              "labelTextSize": "0.875rem",
                               "rightColumn": 45,
                               "isDefaultClickDisabled": true,
                               "widgetId": "6yoqgut09l",
@@ -2059,9 +2414,11 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "disabledWhenInvalid": false,
+                              "borderRadius": "0px",
                               "buttonVariant": "SECONDARY"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_seed",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2080,25 +2437,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "a6bjsvxaey",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Seed:",
                               "version": 2,
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[SweepEscrow_seedSelection.value].seed}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_seedSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2121,22 +2485,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "9tizj2m4fp",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_to",
                               "dynamicPropertyPathList": [],
                               "displayName": "Input",
@@ -2155,25 +2526,32 @@
                               "dynamicBindingPathList": [
                                 {
                                   "key": "defaultText"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
                               "isDisabled": true,
                               "key": "aglrxm8ov2",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "7bmopv3gaw",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "label": "Chain ID:",
                               "version": 2,
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
                               "isLoading": false,
+                              "borderRadius": "0px",
                               "iconAlign": "left",
                               "defaultText": "{{appsmith.store.accounts[SweepEscrow_toSelection.value].chain_id}}"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_toSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2196,22 +2574,29 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.accounts}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 32,
                               "widgetId": "nywg6k65jo",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             },
                             {
+                              "boxShadow": "none",
                               "widgetName": "SweepEscrow_escrowSelection",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -2234,36 +2619,56 @@
                                 },
                                 {
                                   "key": "defaultOptionValue"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "options": "{{appsmith.store.escrows}}",
                               "placeholderText": "Select option",
                               "isDisabled": false,
                               "key": "k4ujuujfkk",
+                              "labelTextSize": "0.875rem",
                               "isRequired": false,
                               "rightColumn": 63,
                               "widgetId": "zqjwbj57gd",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "isVisible": true,
                               "version": 1,
                               "parentId": "7jeq0yf2f6",
                               "renderMode": "CANVAS",
-                              "isLoading": false
+                              "isLoading": false,
+                              "borderRadius": "0px"
                             }
                           ],
-                          "key": "egb3vqge90"
+                          "key": "egb3vqge90",
+                          "labelTextSize": "0.875rem",
+                          "rightColumn": 454.5,
+                          "detachFromLayout": true,
+                          "widgetId": "7jeq0yf2f6",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "08qlgr476d",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "0px"
                         }
                       ],
                       "key": "v77h8uzhv6",
+                      "labelTextSize": "0.875rem",
                       "backgroundColor": "white",
                       "rightColumn": 63,
                       "widgetId": "08qlgr476d",
                       "isVisible": true,
                       "parentId": "86qlkeme01",
                       "renderMode": "CANVAS",
-                      "isLoading": false
+                      "isLoading": false,
+                      "borderRadius": "0px"
                     }
                   ],
                   "key": "2huj8jtw47",
+                  "labelTextSize": "0.875rem",
                   "tabName": "Sweep escrow",
                   "rightColumn": 843.5,
                   "detachFromLayout": true,
@@ -2273,12 +2678,15 @@
                   "version": 1,
                   "parentId": "x196jipln3",
                   "renderMode": "CANVAS",
-                  "isLoading": false
+                  "isLoading": false,
+                  "borderRadius": "0px"
                 }
               ],
               "key": "kxstn148ki",
+              "labelTextSize": "0.875rem",
               "rightColumn": 60,
               "widgetId": "x196jipln3",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "defaultTab": "Register escrow",
               "shouldShowTabs": true,
               "tabsObj": {
@@ -2315,7 +2723,8 @@
               "version": 3,
               "parentId": "0",
               "renderMode": "CANVAS",
-              "isLoading": false
+              "isLoading": false,
+              "borderRadius": "0px"
             }
           ]
         },
@@ -2423,7 +2832,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": false
+    "isHidden": true
   },
   "deleted": false,
   "policies": [],
