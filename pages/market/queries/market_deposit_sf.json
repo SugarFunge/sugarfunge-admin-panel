@@ -26,7 +26,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n    \"seed\": {{MarketDeposit_form.data.MarketDeposit_seed}},\n    \"market_id\": {{appsmith.store.markets[MarketExchange_IDSelection.value].chain_id}},\n    \"market_rate_id\": {{MarketDeposit_form.data.MarketDeposit_rateID}},\n    \"amount\": {{MarketDeposit_form.data.MarketDeposit_amount}}\n}",
+      "body": "{\n    \"seed\": {{MarketDeposit_form.data.MarketDeposit_seed}},\n    \"market_id\": {{appsmith.store.markets[MarketDeposit_IDSelection.value].chain_id}},\n    \"market_rate_id\": {{MarketDeposit_form.data.MarketDeposit_rateID}},\n    \"amount\": {{MarketDeposit_form.data.MarketDeposit_amount}}\n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {
@@ -52,7 +52,7 @@
       "MarketDeposit_form.data.MarketDeposit_amount",
       "MarketDeposit_form.data.MarketDeposit_rateID",
       "MarketDeposit_form.data.MarketDeposit_seed",
-      "appsmith.store.markets[MarketExchange_IDSelection.value].chain_id"
+      "appsmith.store.markets[MarketDeposit_IDSelection.value].chain_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

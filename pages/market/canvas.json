@@ -400,7 +400,7 @@
                               "defaultText": "{{appsmith.store.accounts[CreateMarket_seedSelection.value].seed}}"
                             },
                             {
-                              "resetFormOnClick": true,
+                              "resetFormOnClick": false,
                               "boxShadow": "none",
                               "widgetName": "CreateRate_reset",
                               "onClick": "{{\nstoreValue(\"rates_table\", undefined);\t\tstoreValue(\"rates_table_metadata\", undefined);\n}}",
@@ -2514,7 +2514,9 @@
               "pluginType": "API",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 100000
-            },
+            }
+          ],
+          [
             {
               "id": "market_market.refresh_markets",
               "name": "market.refresh_markets",

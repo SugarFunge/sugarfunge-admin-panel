@@ -26,7 +26,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\t\"market_rate_chain_id\": {{CreateMarket_form.data.CreateMarket_marketID}}, \n\t\t\"market_chain_id\": {{CreateMarket_form.data.CreateMarket_marketRateID}}\n}",
+      "body": "{\n\t\t\"market_rate_chain_id\": {{CreateMarket_form.data.CreateMarket_marketRateID}}, \n\t\t\"market_chain_id\": {{CreateMarket_form.data.CreateMarket_marketID}}\n}",
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
         {

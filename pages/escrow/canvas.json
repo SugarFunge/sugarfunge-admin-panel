@@ -492,7 +492,7 @@
                               "isLoading": false,
                               "borderRadius": "0px",
                               "iconAlign": "left",
-                              "defaultText": "1000"
+                              "defaultText": "1001"
                             },
                             {
                               "boxShadow": "none",
@@ -1798,7 +1798,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "DepositEscrow_resetValue",
-                              "onClick": "{{\nstoreValue(\"schema_table\", undefined);\t\tstoreValue(\"schema_table\", undefined);\n}}",
+                              "onClick": "{{\nstoreValue(\"deposit_table\", undefined);\t\tstoreValue(\"deposit_table\", undefined);\n}}",
                               "buttonColor": "#03B365",
                               "dynamicPropertyPathList": [
                                 {
@@ -2728,39 +2728,7 @@
             }
           ]
         },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "escrow_get_escrow",
-              "name": "get_escrow",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 100000
-            },
-            {
-              "id": "escrow_get_escrow_classes",
-              "name": "get_escrow_classes",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 100000
-            }
-          ],
-          [
-            {
-              "id": "escrow_escrows.refresh_escrows",
-              "name": "escrows.refresh_escrows",
-              "collectionId": "escrow_escrows",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n\t\tget_escrow_classes.run(() => {\n\t\t\tget_escrow.run(() => {\n\t\t\t\tescrows.escrow_dropdowns();\n\t\t\t\tescrows.escrow_all();\n\t\t\t}, () => showAlert('Couldnt refresh escrows','warning'))\n\t\t}, () => showAlert('Couldnt refresh escrows classes','warning'))\n\t}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "widgetNames": [
           "Canvas1",
           "Canvas2",
@@ -2823,7 +2791,7 @@
           "SweepEscrow_to",
           "SweepEscrow_toSelection"
         ],
-        "validOnPageLoadActions": true,
+        "validOnPageLoadActions": false,
         "id": "escrow",
         "deleted": false,
         "policies": [],
